@@ -7,10 +7,10 @@
   "actions": [
     {
       "source": [
-        "if Input.match('isEqualTo', 'menu', Context.get('currentMessage'), {}) then Workflow.branch('2') end"
+        "Workflow.branch('2')"
       ],
-      "_id": "5ff8e17492c3eb85950e392c",
-      "id": "01ef3114-129f-479a-b6c7-f5a315ab1d1d"
+      "_id": "5ff8e94f0ca4ec6abec30c4d",
+      "id": "8fc0ff5d-5bf3-4363-8ef1-2744597be00d"
     }
   ],
   "reactions": [],

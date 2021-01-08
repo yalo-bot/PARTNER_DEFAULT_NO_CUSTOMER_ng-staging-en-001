@@ -1,0 +1,27 @@
+{
+  "_id": "5ff8e3ca92c3ebac4d0e3936",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 3,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('isEqualTo', 'restart', Context.get('currentMessage'), {}) then Workflow.branch('2') end"
+      ],
+      "_id": "5ff8e3f292c3eb831d0e3938",
+      "id": "ede6222e-d0c2-4c8a-a10a-9a46ef1d40b5"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Option1"
+      ],
+      "_id": "5ff8e3f292c3ebcaa80e3939",
+      "id": "d0d581e5-5d4f-4e93-ba3f-f6db33b8f16f"
+    }
+  ],
+  "triggers": null,
+  "__v": 0,
+  "name": "option1"
+}
