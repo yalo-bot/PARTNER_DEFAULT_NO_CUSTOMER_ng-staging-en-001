@@ -7,9 +7,9 @@
   "actions": [
     {
       "source": [
-        "Workflow.branch('2')"
+        "Workflow.branch(2)"
       ],
-      "_id": "5ff8e94f0ca4ec6abec30c4d",
+      "_id": "5ff8ec9d0ca4ec8eb0c30c57",
       "id": "8fc0ff5d-5bf3-4363-8ef1-2744597be00d"
     }
   ],
