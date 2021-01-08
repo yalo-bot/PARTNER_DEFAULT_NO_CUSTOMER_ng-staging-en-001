@@ -1,0 +1,19 @@
+{
+  "_id": "5ff8e0f492c3eb515e0e3928",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 1,
+  "name": "start",
+  "type": "start",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('isEqualTo', 'menu', Context.get('currentMessage'), {}) then Workflow.branch('2') end"
+      ],
+      "_id": "5ff8e17492c3eb85950e392c",
+      "id": "01ef3114-129f-479a-b6c7-f5a315ab1d1d"
+    }
+  ],
+  "reactions": [],
+  "triggers": null,
+  "__v": 0
+}
