@@ -4,16 +4,8 @@
   "id": 1,
   "name": "start",
   "type": "start",
-  "actions": [
-    {
-      "source": [
-        "if Input.match('isEqualTo', 'menu', Context.get('currentMessage'), {}) then Workflow.branch('2') end"
-      ],
-      "_id": "5ff8f522c3d269b02d1b0ea0",
-      "id": "fe4fd1ca-4716-438a-9676-a255eb77eeec"
-    }
-  ],
-  "reactions": [],
+  "actions": null,
+  "reactions": null,
   "triggers": null,
   "__v": 0
 }

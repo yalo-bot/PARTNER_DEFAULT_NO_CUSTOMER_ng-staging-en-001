@@ -6,13 +6,21 @@
   "actions": [
     {
       "source": [
-        "if Input.match('isEqualTo', '1', Context.get('currentMessage'), {}) then Workflow.branch('3') end"
+        "if Input.match('isEqualTo', '1', Context.get('currentMessage'), {}) then Workflow.branch(3) end"
       ],
-      "_id": "5ff8f912891824d8af6c07f6",
+      "_id": "5ff8f9548918246c566c07fd",
       "id": "cf0e8235-c48b-4030-ad1e-07d17a388c2a"
     }
   ],
-  "reactions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile(\"Hello World!!\")"
+      ],
+      "_id": "5ff8f954891824e47b6c07fe",
+      "id": "0a6ad01c-0964-45d4-b70a-6dbef1d2d58f"
+    }
+  ],
   "triggers": null,
   "__v": 0,
   "name": "menu"
