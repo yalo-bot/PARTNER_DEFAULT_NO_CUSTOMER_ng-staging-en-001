@@ -8,16 +8,16 @@
       "source": [
         "Workflow.branch(2)"
       ],
-      "_id": "5ff8ff210fcbb0f339d61973",
+      "_id": "5ff900480fcbb005cbd61982",
       "id": "501eb66b-a638-4898-9480-f343708379e1"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile(\"Template.compile(\"Hi {{name}}!!!\")\")"
+        "Template.compile(\"Hi {{name}}!!!\")"
       ],
-      "_id": "5ff8ff210fcbb0c720d61974",
+      "_id": "5ff900480fcbb0899fd61983",
       "id": "3b44a675-8063-4801-89d5-8dba46857f3c"
     }
   ],
