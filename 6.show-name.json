@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Workflow.branch(2)"
+        "Invoke.webhook(\"https://webhook.site/8748e5e2-aa2c-4e88-81e2-5c6f578d672c\", \"POST\", {\n    name=Context.get(\"name\")\n})\nWorkflow.branch(2)"
       ],
-      "_id": "5ff9029b0fcbb00b72d6199f",
+      "_id": "5ff904c70fcbb0bfa8d619af",
       "id": "501eb66b-a638-4898-9480-f343708379e1"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile(\"Hi {{name}}!!!\")"
       ],
-      "_id": "5ff9029b0fcbb0064fd619a0",
+      "_id": "5ff904c70fcbb08501d619b0",
       "id": "3b44a675-8063-4801-89d5-8dba46857f3c"
     },
     {
       "source": [
         "Template.compile(\"Nice meeting you.\")"
       ],
-      "_id": "5ff9029b0fcbb09c92d619a1",
+      "_id": "5ff904c70fcbb08520d619b1",
       "id": "eae31592-eaa4-4e7d-89d9-035c2fd685d2"
     }
   ],
