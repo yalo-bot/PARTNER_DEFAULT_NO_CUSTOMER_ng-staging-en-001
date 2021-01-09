@@ -8,16 +8,16 @@
       "source": [
         "if Input.match('isEqualTo', 'restart', Context.get('currentMessage'), {}) then Workflow.branch('2') end"
       ],
-      "_id": "5ff8e3f292c3eb831d0e3938",
+      "_id": "5ff8f5bec3d269939b1b0ec5",
       "id": "ede6222e-d0c2-4c8a-a10a-9a46ef1d40b5"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Option1"
+        "Template.compile(\"Option1\")"
       ],
-      "_id": "5ff8e3f292c3ebcaa80e3939",
+      "_id": "5ff8f5bec3d269dba71b0ec6",
       "id": "d0d581e5-5d4f-4e93-ba3f-f6db33b8f16f"
     }
   ],
