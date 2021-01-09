@@ -6,18 +6,18 @@
   "actions": [
     {
       "source": [
-        "local var = Context.get('currentMessage')\nif Input.match('isEqualTo', '1', var, {}) then Workflow.branch(3) end"
+        "Workflow.branch(5)"
       ],
-      "_id": "5ff8fb670fcbb04b71d61952",
+      "_id": "5ff8ff0b0fcbb00663d61971",
       "id": "632d3d94-df8f-44b1-a173-b7dc592f0d01"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile(\"Template.compile(\"Hello World!!\")\")"
+        "Template.compile(\"Template.compile(\"Template.compile(\"Template.compile(\"Hello World!!\")\")\")\")"
       ],
-      "_id": "5ff8fb670fcbb01803d61953",
+      "_id": "5ff8ff0b0fcbb09259d61972",
       "id": "0a6ad01c-0964-45d4-b70a-6dbef1d2d58f"
     }
   ],

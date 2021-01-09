@@ -1,0 +1,27 @@
+{
+  "_id": "5ff8fd370fcbb0fa06d6195d",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 5,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "Context.set('name', Context.get('currentMessage'))\nWorkflow.branch(6)"
+      ],
+      "_id": "5ff8fef80fcbb0c3fad6196f",
+      "id": "a2367b75-f38f-4a26-93ac-2092dc9b634e"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile(\"What is your name?\")"
+      ],
+      "_id": "5ff8fef80fcbb05470d61970",
+      "id": "95d6e6d2-8725-48fc-ae78-6e86b5fa77e1"
+    }
+  ],
+  "triggers": null,
+  "__v": 0,
+  "name": "ask-name"
+}
