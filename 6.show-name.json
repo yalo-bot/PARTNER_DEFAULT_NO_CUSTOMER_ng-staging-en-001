@@ -8,7 +8,7 @@
       "source": [
         "Workflow.branch(2)"
       ],
-      "_id": "5ff900480fcbb005cbd61982",
+      "_id": "5ff9029b0fcbb00b72d6199f",
       "id": "501eb66b-a638-4898-9480-f343708379e1"
     }
   ],
@@ -17,8 +17,15 @@
       "source": [
         "Template.compile(\"Hi {{name}}!!!\")"
       ],
-      "_id": "5ff900480fcbb0899fd61983",
+      "_id": "5ff9029b0fcbb0064fd619a0",
       "id": "3b44a675-8063-4801-89d5-8dba46857f3c"
+    },
+    {
+      "source": [
+        "Template.compile(\"Nice meeting you.\")"
+      ],
+      "_id": "5ff9029b0fcbb09c92d619a1",
+      "id": "eae31592-eaa4-4e7d-89d9-035c2fd685d2"
     }
   ],
   "triggers": null,
