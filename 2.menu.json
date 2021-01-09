@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('isEqualTo', '1', Context.get('currentMessage'), {}) then Workflow.branch(3) end"
+        "local var = Context.get('currentMessage')\nif Input.match('isEqualTo', '1', var, {}) then Workflow.branch(3) end"
       ],
-      "_id": "5ff8fb0c0fcbb0059fd61942",
+      "_id": "5ff8fb670fcbb04b71d61952",
       "id": "632d3d94-df8f-44b1-a173-b7dc592f0d01"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile(\"Template.compile(\"Hello World!!\")\")"
       ],
-      "_id": "5ff8fb0c0fcbb0eaf2d61943",
+      "_id": "5ff8fb670fcbb01803d61953",
       "id": "0a6ad01c-0964-45d4-b70a-6dbef1d2d58f"
     }
   ],
