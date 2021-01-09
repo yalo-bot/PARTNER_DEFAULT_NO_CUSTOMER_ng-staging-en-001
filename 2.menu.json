@@ -3,8 +3,16 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 2,
   "type": "step",
-  "actions": null,
-  "reactions": null,
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile(\"Hello World!\")"
+      ],
+      "_id": "5ff8f2b658147021856adb02",
+      "id": "47a0e562-6908-4571-98d1-3b230919cd9d"
+    }
+  ],
   "triggers": null,
   "__v": 0,
   "name": "menu"
