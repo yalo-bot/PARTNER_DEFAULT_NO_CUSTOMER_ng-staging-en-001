@@ -3,31 +3,8 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 13,
   "type": "step",
-  "actions": [
-    {
-      "source": [
-        "Workflow.branch(11) "
-      ],
-      "_id": "5ffe2a5f51319752978a8ea6",
-      "id": "35a75e21-8d8d-43e4-8bed-f78918847602"
-    }
-  ],
-  "reactions": [
-    {
-      "source": [
-        "Template.compile(\"Hi {{name}}!\")"
-      ],
-      "_id": "5ffe2a5f513197f1c18a8ea7",
-      "id": "fbc4a863-a12c-4b26-8ce7-3374547d2dd3"
-    },
-    {
-      "source": [
-        "Template.compile(\"Nice meeting you! Type anything to go back to *menu* step.\")"
-      ],
-      "_id": "5ffe2a5f5131971b308a8ea8",
-      "id": "868d92fe-cfaa-4499-a182-2890bb252d8f"
-    }
-  ],
+  "actions": null,
+  "reactions": null,
   "triggers": null,
   "__v": 0,
   "name": "show-name"
