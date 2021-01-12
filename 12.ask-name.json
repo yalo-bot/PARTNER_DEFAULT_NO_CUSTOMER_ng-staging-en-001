@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Context.set('name', Context.get('currentMessage'))\nContext.set('name2', Context.get('name'))\nWorkflow.branch(13)"
+        "local name = Context.get(\"currentMessage\")\nContext.set('name', name)\nWorkflow.branch(13)"
       ],
-      "_id": "5ffe317e51319726fe8a8edc",
+      "_id": "5ffe3356513197a1fa8a8eea",
       "id": "723fb759-37b7-4f4f-af08-db67035b96d3"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile(\"What's your name my friend?\")"
       ],
-      "_id": "5ffe317e513197bc968a8edd",
+      "_id": "5ffe33565131977c2d8a8eeb",
       "id": "2818e089-dc71-4f0f-833c-c252511f7ce7"
     }
   ],
