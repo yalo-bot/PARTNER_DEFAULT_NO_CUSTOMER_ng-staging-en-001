@@ -3,8 +3,24 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 12,
   "type": "step",
-  "actions": null,
-  "reactions": null,
+  "actions": [
+    {
+      "source": [
+        "Context.set('name', Context.get('currentMessage'))\nWorkflow.branch(13) "
+      ],
+      "_id": "5ffe2a025131972c2f8a8e8f",
+      "id": "723fb759-37b7-4f4f-af08-db67035b96d3"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile(\"What's your name my friend?\")"
+      ],
+      "_id": "5ffe2a02513197ef458a8e90",
+      "id": "2818e089-dc71-4f0f-833c-c252511f7ce7"
+    }
+  ],
   "triggers": null,
   "__v": 0,
   "name": "ask-name"
