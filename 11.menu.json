@@ -3,8 +3,31 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 11,
   "type": "step",
-  "actions": null,
-  "reactions": null,
+  "actions": [
+    {
+      "source": [
+        "Workflow.branch(12) "
+      ],
+      "_id": "5ffe2ad65131973c268a8ec4",
+      "id": "e35e2b12-2d72-474a-83e3-76af76ea1014"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile(\"Hello from menu step!\")"
+      ],
+      "_id": "5ffe2ad651319742d98a8ec5",
+      "id": "f3e8d11b-de22-4503-9ece-32fb5e0c00e7"
+    },
+    {
+      "source": [
+        "Template.compile(\"This second bubble has *bold*, _italic,_ and ~strikethrough~ words. Plus some cool emojis 🤩 🧠🚀\")"
+      ],
+      "_id": "5ffe2ad651319714ac8a8ec6",
+      "id": "99040e74-c051-45c8-bf55-d8c263275fc1"
+    }
+  ],
   "triggers": null,
   "__v": 0,
   "name": "menu"
