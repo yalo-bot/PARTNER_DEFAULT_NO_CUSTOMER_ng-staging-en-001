@@ -3,31 +3,8 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 13,
   "type": "step",
-  "actions": [
-    {
-      "source": [
-        "Context.set(\"age\", Context.get(\"currentMessage\"))\nlocal age = tonumber(Context.get(\"currentMessage\"))\nDebug.print(tostring(age))\nif age > 21 then \n    Context.set(\"result\", \"You are old enough to drink\")\nelse\n    local yearsToGo = 21-age\n    Context.set(\"result\", \"See you in \" .. yearsToGo .. \" years\")\nend\nWorkflow.branch(17)"
-      ],
-      "_id": "5ffe43bda4e187ca5729a423",
-      "id": "35a75e21-8d8d-43e4-8bed-f78918847602"
-    }
-  ],
-  "reactions": [
-    {
-      "source": [
-        "Template.compile(\"Hi {{name}}!\")"
-      ],
-      "_id": "5ffe43bda4e1873e4829a424",
-      "id": "fbc4a863-a12c-4b26-8ce7-3374547d2dd3"
-    },
-    {
-      "source": [
-        "Template.compile(\"What's your age?\")"
-      ],
-      "_id": "5ffe43bda4e187612629a425",
-      "id": "868d92fe-cfaa-4499-a182-2890bb252d8f"
-    }
-  ],
+  "actions": null,
+  "reactions": null,
   "triggers": null,
   "__v": 0,
   "name": "show-name"
