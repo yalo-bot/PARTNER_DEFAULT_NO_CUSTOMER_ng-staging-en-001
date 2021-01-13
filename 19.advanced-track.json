@@ -1,0 +1,11 @@
+{
+  "_id": "5fff2994d6726b6a6360f420",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 19,
+  "type": "step",
+  "actions": [],
+  "reactions": [],
+  "triggers": null,
+  "__v": 0,
+  "name": "advanced-track"
+}

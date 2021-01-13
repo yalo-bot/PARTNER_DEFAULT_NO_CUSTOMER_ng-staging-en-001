@@ -4,8 +4,16 @@
   "id": 10,
   "name": "start",
   "type": "start",
-  "actions": null,
-  "reactions": null,
+  "actions": [
+    {
+      "source": [
+        "Workflow.branch(11) "
+      ],
+      "_id": "5fff2b67d6726b91e660f423",
+      "id": "01c91a1f-dc0d-4de6-978d-7576d74edc04"
+    }
+  ],
+  "reactions": [],
   "triggers": null,
   "__v": 0
 }

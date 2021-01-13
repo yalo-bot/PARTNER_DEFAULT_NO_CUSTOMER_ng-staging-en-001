@@ -3,8 +3,24 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 18,
   "type": "step",
-  "actions": null,
-  "reactions": null,
+  "actions": [
+    {
+      "source": [
+        "Invoke.webhook(\"https://webhook.site/a565a1ba-a66e-4a63-b556-4d6e6e7c37b9\", \"POST\", \"MOI\")\nlocal result = Invoke.cloudFunction(\"yalo-math-arithmetic-staging\", \"bot.nextState.script.options.expression,bot.nextState.script.options.save,bot.nextState.script.options.transitions.next,bot.nextState.script.options.transitions.error,bot.brain.foo.text,bot.brain.foo.action,bot.brain.bar.text,bot.brain.bar.text\", {\n\tbot= {\n\t\tnextState= {\n\t\t\tscript= {\n\t\t\t\toptions= {\n\t\t\t\t\texpression= \"((foo * bar)**2) + 32\",\n\t\t\t\t\tsave= \"result\",\n\t\t\t\t\ttransitions= {\n\t\t\t\t\t\tnext= \"next\",\n\t\t\t\t\t\terror= \"error\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\tbrain= {\n\t\t\tfoo= {\n                text= \"1\",\n                action= \"1\"\n            },\n            bar= {\n                text= \"2\",\n                action= \"2\"\n            }\n\t\t}\n\t}\n}, \"lambdaResult\", {})\nDebug.print(tostring(result))\nContext.set(\"invokeResult\", result.data.bot.brain.result)\nWorkflow.branch(11)"
+      ],
+      "_id": "5fff2b7dd6726b435e60f42f",
+      "id": "c744bcab-9ed8-4653-9a3f-371dc769ce56"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile(\"hello regex\")"
+      ],
+      "_id": "5fff2b7dd6726bd59660f430",
+      "id": "81de068d-37ec-4585-9188-e8c7af5647e2"
+    }
+  ],
   "triggers": null,
   "__v": 0,
   "name": "regex"
