@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Workflow.branch(11)"
+        "Context.set('age', Context.get('currentMessage'))\nlocal age = Context.get('currentMessage')\nDebug.print(age)\nif age > 21 then \n    Context.set('result', 'You are old enough to drink')\nelse\n    local yearsToGo = 21-age\n    Context.set('result', \"See you in  \" .. yearsToGo .. \" years\")\nend\nWorkflow.branch(17)"
       ],
-      "_id": "5ffe335a5131971bf78a8eec",
+      "_id": "5ffe3df149eac0796026eb82",
       "id": "35a75e21-8d8d-43e4-8bed-f78918847602"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile(\"Hi {{name}}!\")"
       ],
-      "_id": "5ffe335a513197a71e8a8eed",
+      "_id": "5ffe3df149eac0926826eb83",
       "id": "fbc4a863-a12c-4b26-8ce7-3374547d2dd3"
     },
     {
       "source": [
-        "Template.compile(\"Nice meeting you! Type anything to go back to *menu* step.\")"
+        "Template.compile(\"What's your age?\")"
       ],
-      "_id": "5ffe335a51319750d58a8eee",
+      "_id": "5ffe3df149eac07f1226eb84",
       "id": "868d92fe-cfaa-4499-a182-2890bb252d8f"
     }
   ],

@@ -1,0 +1,19 @@
+{
+  "_id": "5ffe3c8449eac0826b26eb80",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 17,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile(\"{{result}} !\")"
+      ],
+      "_id": "5ffe3e0c49eac0088926eb85",
+      "id": "3a92f2f0-1d81-418a-84db-5e5b2e84b1f1"
+    }
+  ],
+  "triggers": null,
+  "__v": 0,
+  "name": "resulting-age"
+}
