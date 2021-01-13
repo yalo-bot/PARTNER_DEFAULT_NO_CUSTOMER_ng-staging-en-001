@@ -8,23 +8,23 @@
       "source": [
         "Workflow.branch(12)"
       ],
-      "_id": "5fff3e7bcb9b617a554f5325",
+      "_id": "5fff4380cb9b613a234f5345",
       "id": "111524e2-cd7e-4228-a0d0-30b9a57715f2"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile(\"Hello! You're in the *menu* step.\")"
+        "Template.compile([[Hello! You're in the *menu* step.]])"
       ],
-      "_id": "5fff3e7bcb9b61da124f5323",
+      "_id": "5fff4380cb9b6104854f5343",
       "id": "f3e8d11b-de22-4503-9ece-32fb5e0c00e7"
     },
     {
       "source": [
-        "Template.compile(\"This second bubble has *bold*, _italic,_ and ~strikethrough~ words. Plus some cool emojis 🤩 🧠🚀. Type anything to go to the next step.\")"
+        "Template.compile([[This second bubble has *bold*, _italic,_ and ~strikethrough~ words. Plus some cool emojis 🤩 🧠🚀. \n\nType anything to go to the next step.]])"
       ],
-      "_id": "5fff3e7bcb9b616df74f5324",
+      "_id": "5fff4380cb9b617ca54f5344",
       "id": "99040e74-c051-45c8-bf55-d8c263275fc1"
     }
   ],
