@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('isEqualTo', 'menu', Context.get('currentMessage'), {}) then Workflow.branch(11) end"
+        "if Input.match('contains', 'menu|back|restart', Context.get('currentMessage'), {}) then Workflow.branch(11) end"
       ],
-      "_id": "5ffe41e76b5bd34d336cb2c4",
+      "_id": "5ffe42066b5bd370686cb2d8",
       "id": "0dd64a9b-4181-4ee7-b325-13ce282affc8"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile(\"{{result}} !\")"
       ],
-      "_id": "5ffe41e76b5bd3019e6cb2c5",
+      "_id": "5ffe42066b5bd339ed6cb2d9",
       "id": "3a92f2f0-1d81-418a-84db-5e5b2e84b1f1"
     },
     {
       "source": [
         "Template.compile(\"Write *menu* to return\")"
       ],
-      "_id": "5ffe41e76b5bd380446cb2c6",
+      "_id": "5ffe42066b5bd3c1d36cb2da",
       "id": "8915b5aa-2816-48cb-8a4c-9c5e54083c62"
     }
   ],
