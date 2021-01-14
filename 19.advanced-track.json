@@ -3,8 +3,24 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 19,
   "type": "step",
-  "actions": [],
-  "reactions": [],
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(11) end"
+      ],
+      "_id": "5fffa6625233da0bcb99c5a7",
+      "id": "5b777913-95ce-496a-af48-65a17c4cb436"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[test]])"
+      ],
+      "_id": "5fffa6625233da619299c5a6",
+      "id": "b2a4d279-9d04-4ee8-ac89-5d036ad96f26"
+    }
+  ],
   "triggers": null,
   "__v": 0,
   "name": "advanced-track"
