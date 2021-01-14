@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Context.set(\"age\", Context.get(\"currentMessage\"))\n\nlocal age = String.onlyNumbers( Context.get(\"age\") )\n\nif tonumber(age) > 21 then \n    Context.set(\"result\", \"You are old enough to drink\")\nelse\n    local yearsToGo = 21-age\n    Context.set(\"result\", \"See you in \" .. yearsToGo .. \" years\")\nend\nWorkflow.branch(17)"
+        "Context.set(\"age\", Context.get(\"currentMessage\"))\n\nlocal age = tonumber(String.onlyNumbers( Context.get(\"age\") ))\n\nif age > 21 then \n    Context.set(\"result\", \"You are old enough to drink\")\nelse\n    local yearsToGo = 21-age\n    Context.set(\"result\", \"See you in \" .. yearsToGo .. \" years\")\nend\nWorkflow.branch(17)"
       ],
-      "_id": "6000ce3ef3801b2382ce90bf",
+      "_id": "6000d026f3801b5c57ce90dc",
       "id": "35a75e21-8d8d-43e4-8bed-f78918847602"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile([[Hi {{name}}!]])"
       ],
-      "_id": "6000ce3ef3801b946ace90bd",
+      "_id": "6000d026f3801b6f87ce90da",
       "id": "fbc4a863-a12c-4b26-8ce7-3374547d2dd3"
     },
     {
       "source": [
         "Template.compile([[What's your age?]])"
       ],
-      "_id": "6000ce3ef3801b1b73ce90be",
+      "_id": "6000d026f3801b2474ce90db",
       "id": "868d92fe-cfaa-4499-a182-2890bb252d8f"
     }
   ],
