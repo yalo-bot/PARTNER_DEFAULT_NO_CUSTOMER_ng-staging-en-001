@@ -1,0 +1,27 @@
+{
+  "_id": "6000d1a0f3801b1c79ce916b",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 21,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "Context.set(\"cellphone\", Context.get(\"currentMessage\"))\n\nWorkflow.branch(11)"
+      ],
+      "_id": "6000d28dc4c8ad44ddbddbf6",
+      "id": "4e576d96-4d33-4ec1-b7ba-8dff1094ef3c"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[What's your cellphone?]])"
+      ],
+      "_id": "6000d28dc4c8ad332cbddbf5",
+      "id": "4e9112c8-e424-4452-ad0a-5437da5727af"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "get-cellphone"
+}
