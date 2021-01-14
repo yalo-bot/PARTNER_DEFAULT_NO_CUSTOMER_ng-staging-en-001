@@ -8,30 +8,30 @@
       "source": [
         "if Input.match('regex', '[0-9]+', Context.get('currentMessage'), {}) then Workflow.branch(18) end"
       ],
-      "_id": "5fff4ba03426654529eb4722",
+      "_id": "5fffa0f983b15074802b2484",
       "id": "0dd64a9b-4181-4ee7-b325-13ce282affc8"
     },
     {
       "source": [
         "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(11) end"
       ],
-      "_id": "5fff4ba03426654e45eb4723",
+      "_id": "5fffa0f983b1507c022b2485",
       "id": "8d9ad7a0-95f4-4a0d-94d5-2b6a3efcd360"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile(\"{{result}} !\")"
+        "Template.compile([[{{result}} !]])"
       ],
-      "_id": "5fff4ba03426652176eb4720",
+      "_id": "5fffa0f983b15051162b2482",
       "id": "3a92f2f0-1d81-418a-84db-5e5b2e84b1f1"
     },
     {
       "source": [
-        "Template.compile(\"Write a number\")"
+        "Template.compile([[Write a number]])"
       ],
-      "_id": "5fff4ba03426651678eb4721",
+      "_id": "5fffa0f983b150a3e02b2483",
       "id": "8915b5aa-2816-48cb-8a4c-9c5e54083c62"
     }
   ],
