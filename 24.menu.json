@@ -8,29 +8,22 @@
       "source": [
         "if Input.match('contains', 'Cafe|Coffee|cafe|coffee', Context.get('currentMessage'), {}) then Workflow.branch(25) end"
       ],
-      "_id": "6001c65097bd8f27f1c50a10",
+      "_id": "6001c67397bd8fb295c50a2e",
       "id": "b58c97d3-32ec-4000-ad96-8a8a6c96c720"
     },
     {
       "source": [
         "if Input.match('isEqualTo', 'pizza', Context.get('currentMessage'), {}) then Workflow.branch(26) end"
       ],
-      "_id": "6001c65097bd8f2064c50a11",
+      "_id": "6001c67397bd8ff62dc50a2f",
       "id": "43326f47-7ab8-47a1-a9e4-3bd26e7462c6"
     },
     {
       "source": [
         "if Input.match('isEqualTo', 'name', Context.get('currentMessage'), {}) then Workflow.branch(29) end"
       ],
-      "_id": "6001c65097bd8f86a9c50a12",
+      "_id": "6001c67397bd8f2667c50a30",
       "id": "eac29b43-83d6-45a7-ba09-ba795be11fbb"
-    },
-    {
-      "source": [
-        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(27) end"
-      ],
-      "_id": "6001c65097bd8f8fc9c50a13",
-      "id": "556e3291-33b6-4bc9-8dab-e184c02abd46"
     }
   ],
   "reactions": [
@@ -38,14 +31,14 @@
       "source": [
         "Template.compile([[Hello there 👋! You're in the *menu* step.]])"
       ],
-      "_id": "6001c65097bd8fa9d4c50a0e",
+      "_id": "6001c67397bd8f9ce4c50a2c",
       "id": "190654cf-e480-43ce-a38e-856fbeeaee31"
     },
     {
       "source": [
         "Template.compile([[Select one of these options:\n\n1️⃣ Coffee\n\n2️⃣ Pizza\n\n3️⃣ Greeting]])"
       ],
-      "_id": "6001c65097bd8f630ec50a0f",
+      "_id": "6001c67397bd8f415ec50a2d",
       "id": "9f1b5dbb-e9dc-4cad-9288-e0eeaf912ff2"
     }
   ],
