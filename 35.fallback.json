@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '.* ', Context.get('currentMessage'), {}) then Workflow.branch(32) end"
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(32) end"
       ],
-      "_id": "6001df2297bd8fcf27c50a60",
+      "_id": "6001e09897bd8f6e87c50b12",
       "id": "66fa4db8-3922-427e-ae2a-48b9ba74499f"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Oops! You're in the fallback step!\n\nType anything to go back to menu.]])"
       ],
-      "_id": "6001df2297bd8f643ec50a5f",
+      "_id": "6001e09897bd8f62a7c50b11",
       "id": "858c2450-3d4b-4141-9f26-7084140fb258"
     }
   ],
