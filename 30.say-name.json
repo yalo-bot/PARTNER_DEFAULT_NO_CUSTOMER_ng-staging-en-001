@@ -1,0 +1,27 @@
+{
+  "_id": "6001c5fc97bd8fe3f7c50a09",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 30,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "Workflow.branch(24)\n"
+      ],
+      "_id": "6001c62097bd8f974dc50a0b",
+      "id": "aae2f5f0-3c3c-4fc6-9726-87428b4c0355"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hello there {{name}}!\n\nType anything to go back to *menu* step.]])"
+      ],
+      "_id": "6001c62097bd8fdaf6c50a0a",
+      "id": "2f4497b5-7057-49c8-b246-4f989ab659de"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "say-name"
+}
