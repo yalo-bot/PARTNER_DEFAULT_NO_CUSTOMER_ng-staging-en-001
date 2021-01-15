@@ -8,21 +8,21 @@
       "source": [
         "if Input.match('contains', 'Coffee|coffee|cafe|Cafe', Context.get('currentMessage'), {}) then Workflow.branch(33) end"
       ],
-      "_id": "6001de8d97bd8f63a5c50a58",
+      "_id": "6001df5697bd8f318dc50a74",
       "id": "57ec87f7-e72f-433a-ab50-74f98bacaecf"
     },
     {
       "source": [
-        "if Input.match('isEqualTo', 'pizza', Context.get('currentMessage'), {}) then Workflow.branch(34) end"
+        "if Input.match('isEqualTo', 'pizza ', Context.get('currentMessage'), {}) then Workflow.branch(34) end"
       ],
-      "_id": "6001de8d97bd8f3538c50a59",
+      "_id": "6001df5697bd8f8062c50a75",
       "id": "a6fd6252-758e-4756-8088-bfe75f319b18"
     },
     {
       "source": [
         "if Input.match('regex', '.* ', Context.get('currentMessage'), {}) then Workflow.branch(35) end"
       ],
-      "_id": "6001de8d97bd8f5548c50a5a",
+      "_id": "6001df5697bd8ffcb5c50a76",
       "id": "b61565ee-2397-4c22-8b2a-9810b686bd0e"
     }
   ],
@@ -31,14 +31,14 @@
       "source": [
         "Template.compile([[Hello! You're now in the *menu* step 👋]])"
       ],
-      "_id": "6001de8d97bd8f7a30c50a56",
+      "_id": "6001df5697bd8f271bc50a72",
       "id": "e7a1a4a4-27bb-435c-86e8-16f532d84bd7"
     },
     {
       "source": [
         "Template.compile([[1️⃣ Coffee\n\n2️⃣ Pizza]])"
       ],
-      "_id": "6001de8d97bd8f53b5c50a57",
+      "_id": "6001df5697bd8f693cc50a73",
       "id": "95a7c3d9-272b-4a40-b137-2cc2ec1899b5"
     }
   ],
