@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '.* ', Context.get('currentMessage'), {}) then Workflow.branch(32) end"
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(32) end"
       ],
-      "_id": "6001dec997bd8f8801c50a5e",
+      "_id": "6001dfb197bd8f23eac50ac5",
       "id": "5277dbfc-04e9-4601-b356-a825f45d78d1"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[It seems that you want some pizza 🍕\n\nType anything to go back to menu.]])"
       ],
-      "_id": "6001dec997bd8f9d01c50a5d",
+      "_id": "6001dfb197bd8f9e68c50ac4",
       "id": "9a978b12-52ed-4e7b-8994-e66a974a5569"
     }
   ],
