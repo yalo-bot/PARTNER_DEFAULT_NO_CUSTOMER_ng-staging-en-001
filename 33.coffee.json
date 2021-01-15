@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '.*  ', Context.get('currentMessage'), {}) then Workflow.branch(32) end"
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(32) end"
       ],
-      "_id": "6001df6a97bd8f0120c50a89",
+      "_id": "6001df7d97bd8fa92ec50a9c",
       "id": "5e14fcae-5f47-4335-8e06-e85543208e76"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[It seems that you want some coffee ☕\n\nType anything to go back to menu.]])"
       ],
-      "_id": "6001df6a97bd8f1ab1c50a88",
+      "_id": "6001df7d97bd8f286cc50a9b",
       "id": "94f9d8bb-5e3f-4d61-944e-9a08745379f6"
     }
   ],
