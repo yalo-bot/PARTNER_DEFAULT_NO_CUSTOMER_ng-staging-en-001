@@ -1,0 +1,27 @@
+{
+  "_id": "6001dddb97bd8f14e2c50a53",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 34,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '.* ', Context.get('currentMessage'), {}) then Workflow.branch(32) end"
+      ],
+      "_id": "6001dec997bd8f8801c50a5e",
+      "id": "5277dbfc-04e9-4601-b356-a825f45d78d1"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[It seems that you want some pizza 🍕\n\nType anything to go back to menu.]])"
+      ],
+      "_id": "6001dec997bd8f9d01c50a5d",
+      "id": "9a978b12-52ed-4e7b-8994-e66a974a5569"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "pizza"
+}

@@ -1,0 +1,27 @@
+{
+  "_id": "6001ddd497bd8f6448c50a52",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 33,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '.* ', Context.get('currentMessage'), {}) then Workflow.branch(32) end"
+      ],
+      "_id": "6001dead97bd8f062dc50a5c",
+      "id": "5e14fcae-5f47-4335-8e06-e85543208e76"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[It seems that you want some coffee ☕\n\nType anything to go back to menu.]])"
+      ],
+      "_id": "6001dead97bd8f164ec50a5b",
+      "id": "94f9d8bb-5e3f-4d61-944e-9a08745379f6"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "coffee"
+}

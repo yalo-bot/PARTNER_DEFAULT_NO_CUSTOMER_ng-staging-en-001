@@ -7,10 +7,10 @@
   "actions": [
     {
       "source": [
-        "if Input.match('contains', 'Hi|hi|Hello|hello|Hola|hola', Context.get('currentMessage'), {}) then Workflow.branch(24) end"
+        "if Input.match('contains', 'Hello|hello|Hi|hi|Hola|hola|Menu|menu', Context.get('currentMessage'), {}) then Workflow.branch(32) end"
       ],
-      "_id": "6001c36697bd8f4992c509c8",
-      "id": "dfd6a864-1b4a-4f6a-98ed-06a44ac1eeb4"
+      "_id": "6001de1697bd8f6580c50a55",
+      "id": "cd43811b-2327-43cb-bdfb-6aba0bc7200d"
     }
   ],
   "reactions": [],
