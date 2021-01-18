@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('isEqualTo', 'bien ', Context.get('currentMessage'), {}) then Workflow.branch(39) end"
+        "if Input.match('isEqualTo', 'bien', Context.get('currentMessage'), {}) then Workflow.branch(39) end"
       ],
-      "_id": "6005afc697bd8f2b96c50c22",
+      "_id": "6005afd897bd8f398bc50c49",
       "id": "1885fc91-90ea-45a6-88cb-b27f2028e037"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile([[*Hey*, _~welcome~_. 😀]])"
       ],
-      "_id": "6005afc697bd8f1e38c50c20",
+      "_id": "6005afd897bd8f4746c50c47",
       "id": "2adc12a6-f3ef-4a3d-9017-51823bf594cc"
     },
     {
       "source": [
         "Template.compile([[How are you?]])"
       ],
-      "_id": "6005afc697bd8f649cc50c21",
+      "_id": "6005afd897bd8f6df5c50c48",
       "id": "f208c71e-8647-432f-8e63-6c6378b2df89"
     }
   ],
