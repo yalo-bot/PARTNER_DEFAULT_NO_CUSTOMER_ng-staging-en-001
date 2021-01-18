@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', 'bien', Context.get('currentMessage'), {}) then Workflow.branch(39) end"
+        "if Input.match('regex', 'bien ', Context.get('currentMessage'), {}) then Workflow.branch(39) end"
       ],
-      "_id": "6005aec697bd8f10b8c50bb1",
+      "_id": "6005af2697bd8f7474c50bd7",
       "id": "1885fc91-90ea-45a6-88cb-b27f2028e037"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile([[*Hey*, _~welcome~_. 😀]])"
       ],
-      "_id": "6005aec697bd8fa7e6c50baf",
+      "_id": "6005af2697bd8f5c2bc50bd5",
       "id": "2adc12a6-f3ef-4a3d-9017-51823bf594cc"
     },
     {
       "source": [
         "Template.compile([[How are you?]])"
       ],
-      "_id": "6005aec697bd8f90cac50bb0",
+      "_id": "6005af2697bd8f706ac50bd6",
       "id": "f208c71e-8647-432f-8e63-6c6378b2df89"
     }
   ],
