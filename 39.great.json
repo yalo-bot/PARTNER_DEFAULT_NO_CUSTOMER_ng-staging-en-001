@@ -9,11 +9,11 @@
       "source": [
         "Template.compile([[Great!]])"
       ],
-      "_id": "6005ac9c97bd8f6300c50b5a",
+      "_id": "6005adef97bd8f4b8ac50b79",
       "id": "3281e4a8-96f5-4ed1-91da-64d8d7a19785"
     }
   ],
   "triggers": [],
   "__v": 0,
-  "name": ""
+  "name": "great"
 }
