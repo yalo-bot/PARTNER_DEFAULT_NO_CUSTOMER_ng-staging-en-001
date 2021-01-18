@@ -1,0 +1,48 @@
+{
+  "_id": "6005b95297bd8f652bc50c9e",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 43,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('contains', 'coffee|Coffee|1|uno|one', Context.get('currentMessage'), {}) then Workflow.branch(44) end"
+      ],
+      "_id": "6005ba1197bd8f68e4c50ca6",
+      "id": "11d0a452-d157-4617-8359-d91b8512a0f4"
+    },
+    {
+      "source": [
+        "if Input.match('contains', 'Pizza|pizza|dos|two|2', Context.get('currentMessage'), {}) then Workflow.branch(45) end"
+      ],
+      "_id": "6005ba1197bd8f88b6c50ca7",
+      "id": "5d87a89a-85a9-4f77-a992-e9c12a001e15"
+    },
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(46) end"
+      ],
+      "_id": "6005ba1197bd8f80fdc50ca8",
+      "id": "1e312141-0d74-4646-8bae-21ece7b6fec5"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hello 👋This is the *menu* step!]])"
+      ],
+      "_id": "6005ba1197bd8f9a92c50ca4",
+      "id": "e1122769-93c9-4233-ad4e-a6b0ca2f6910"
+    },
+    {
+      "source": [
+        "Template.compile([[Please select one of these options:\n\n1️⃣Coffee\n\n2️⃣Pizza]])"
+      ],
+      "_id": "6005ba1197bd8f0e0fc50ca5",
+      "id": "594a300b-9a88-4f7d-97c7-928a77cb04fb"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "menu"
+}

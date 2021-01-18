@@ -1,0 +1,27 @@
+{
+  "_id": "6005b98097bd8fc053c50ca2",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 46,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(43) end"
+      ],
+      "_id": "6005ba7997bd8ff80fc50cb0",
+      "id": "5bc09b51-718a-46ff-a098-f316b78f11e8"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Oops! You didn't type any of the options! Type anything to go back to menu.]])"
+      ],
+      "_id": "6005ba7997bd8f9d73c50caf",
+      "id": "8a5c4264-8c0e-4660-9fa1-bd882e64ee7f"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "fallback"
+}
