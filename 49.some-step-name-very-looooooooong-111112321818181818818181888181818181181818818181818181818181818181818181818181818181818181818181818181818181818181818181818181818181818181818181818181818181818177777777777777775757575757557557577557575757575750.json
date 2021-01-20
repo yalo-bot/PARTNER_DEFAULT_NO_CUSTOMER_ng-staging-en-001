@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(50) end"
+        "if Input.match('isEqualTo', 'adios', Context.get('currentMessage'), {}) then Workflow.branch(50) end"
       ],
-      "_id": "60087b642737fa4954fc93a4",
+      "_id": "60087bc02737fa33c0fc93b1",
       "id": "130ba8df-c7c9-41a2-99e7-e7c4132c528b"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Hello!]])"
       ],
-      "_id": "60087b642737fa39cffc93a3",
+      "_id": "60087bc02737fac248fc93b0",
       "id": "9b8409fc-3838-438f-8859-6087c1d1daf5"
     }
   ],
