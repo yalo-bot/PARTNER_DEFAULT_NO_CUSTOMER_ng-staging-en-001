@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('isEqualTo', 'next', Context.get('currentMessage'), {}) then Workflow.branch(57) end"
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(57) end"
       ],
-      "_id": "6008ba322737fafb07fc94f3",
+      "_id": "6008bade2737fa6933fc951a",
       "id": "acec5a9e-c0e8-4d70-ba6f-8878017f7672"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Hello!]])"
       ],
-      "_id": "6008ba322737fa2929fc94f2",
+      "_id": "6008bade2737faca6dfc9519",
       "id": "a35b4352-c59e-4e93-89d0-fdc75e5a7712"
     }
   ],
