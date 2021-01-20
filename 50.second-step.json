@@ -9,11 +9,11 @@
       "source": [
         "Template.compile([[Adios.]])"
       ],
-      "_id": "60087cee2737fa6100fc93e9",
+      "_id": "60087d2d2737fa43f0fc93ff",
       "id": "e8b49708-a180-4498-8c88-bff04709627b"
     }
   ],
   "triggers": [],
   "__v": 0,
-  "name": ""
+  "name": "second-step"
 }
