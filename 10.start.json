@@ -7,9 +7,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('contains', 'Hello|hello|Hola|hola|Menu|menu', Context.get('currentMessage'), {}) then Workflow.branch(51) end"
+        "if Input.match('contains', 'Hello|hello|Hola|hola|Menu|menu', Context.get('currentMessage'), {}) then Workflow.branch(54) end"
       ],
-      "_id": "60087e772737fa40d1fc9412",
+      "_id": "6008b6d62737fa8065fc946d",
       "id": "4978b715-3284-4da1-95d5-32548150aa04"
     }
   ],
