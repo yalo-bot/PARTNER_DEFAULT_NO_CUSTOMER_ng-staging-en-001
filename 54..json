@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('isEqualTo', 'next', Context.get('currentMessage'), {}) then Workflow.branch(55) end"
+        "if Input.match('isEqualTo', 'next', Context.get('currentMessage'), {}) then Workflow.branch(57) end"
       ],
-      "_id": "6008b8602737fa7bf4fc94d7",
+      "_id": "6008b8932737fa1a09fc94df",
       "id": "acec5a9e-c0e8-4d70-ba6f-8878017f7672"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Hello!]])"
       ],
-      "_id": "6008b8602737fae299fc94d6",
+      "_id": "6008b8932737faf4ecfc94de",
       "id": "a35b4352-c59e-4e93-89d0-fdc75e5a7712"
     }
   ],
