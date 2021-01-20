@@ -1,0 +1,27 @@
+{
+  "_id": "60083b862737fa9986fc939d",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 49,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(50) end"
+      ],
+      "_id": "60087b642737fa4954fc93a4",
+      "id": "130ba8df-c7c9-41a2-99e7-e7c4132c528b"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hello!]])"
+      ],
+      "_id": "60087b642737fa39cffc93a3",
+      "id": "9b8409fc-3838-438f-8859-6087c1d1daf5"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "some-step-name-very-looooooooong-111112321818181818818181888181818181181818818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818177777777777777775757575757557557577557575757575750"
+}
