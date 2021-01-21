@@ -6,10 +6,10 @@
   "actions": [
     {
       "source": [
-        "if Input.match('isEqualTo', 'next', Context.get('currentMessage'), {}) then Workflow.branch(64) end"
+        "local userId = Context.get('userId')\n\nif (userId) then\n    Workflow.branch(64)\nelse \n    Workflow.branch(65)"
       ],
-      "_id": "600a0d9442d26adcdd7aa43a",
-      "id": "eadbaa7d-8df8-45a1-9f3b-5f93722ccfc2"
+      "_id": "600a0e2a42d26a7e317aa44b",
+      "id": "6131076c-457b-4eaf-9491-de195630d587"
     }
   ],
   "reactions": [
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Init]])"
       ],
-      "_id": "600a0d9442d26ae7ac7aa439",
+      "_id": "600a0e2a42d26a077c7aa44a",
       "id": "3885621a-31e4-4454-9f73-75a7b8d08384"
     }
   ],
