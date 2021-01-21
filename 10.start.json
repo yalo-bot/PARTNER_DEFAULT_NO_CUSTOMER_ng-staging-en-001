@@ -7,10 +7,10 @@
   "actions": [
     {
       "source": [
-        "Workflow.branch(66)"
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(66) end"
       ],
-      "_id": "600a0be642d26a6b227aa3be",
-      "id": "d7b79547-ba59-4d20-8a40-f513127e9b92"
+      "_id": "600a0d3c42d26a18317aa41b",
+      "id": "913e7ae5-bdd8-4f0e-86f3-eb7f10b3eb2e"
     }
   ],
   "reactions": [],
