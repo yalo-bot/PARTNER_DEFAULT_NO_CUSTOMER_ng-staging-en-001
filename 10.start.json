@@ -7,10 +7,10 @@
   "actions": [
     {
       "source": [
-        "local userId = Context.get('userId')\n\nif (userId) then\n    Workflow.branch(64)\n    Debug.info(\"Hello world\")\nelse \n    Workflow.branch(65)"
+        "Workflow.branch(66)"
       ],
-      "_id": "600a0abe42d26a797f7aa3af",
-      "id": "4eadf8a3-85d7-47f2-bfdc-fb791cc32e7f"
+      "_id": "600a0be642d26a6b227aa3be",
+      "id": "d7b79547-ba59-4d20-8a40-f513127e9b92"
     }
   ],
   "reactions": [],

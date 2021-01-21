@@ -1,0 +1,27 @@
+{
+  "_id": "600a0b7442d26a9ce07aa3b9",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 66,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "local userId = Context.get('userId')\n\nif (userId) then\n    Workflow.branch(64)\n    Debug.info(userId)\nelse \n    Workflow.branch(65)"
+      ],
+      "_id": "600a0c6f42d26a1cb17aa3cf",
+      "id": "49987fab-b51f-434c-a2cc-e2300b768e97"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hi]])"
+      ],
+      "_id": "600a0c6f42d26aafeb7aa3ce",
+      "id": "3885621a-31e4-4454-9f73-75a7b8d08384"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "init"
+}
