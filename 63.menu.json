@@ -1,0 +1,19 @@
+{
+  "_id": "6009cdce42d26a73497aa30c",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 63,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hello! You're in menu step.]])"
+      ],
+      "_id": "6009cde342d26a12857aa30d",
+      "id": "9c85381a-eb54-459c-b6bf-6bbcfd1a52ee"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "menu"
+}
