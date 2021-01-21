@@ -7,17 +7,10 @@
   "actions": [
     {
       "source": [
-        "if Input.match('contains', 'Hello|hello|Hola|hola|Menu|menu', Context.get('currentMessage'), {}) then Workflow.branch(64) end"
+        "local userId = Context.get('userId')\n\nif (userId) then\n    Workflow.branch(64)\nelse \n    Workflow.branch(65)"
       ],
-      "_id": "600a045a42d26a1d087aa315",
-      "id": "4978b715-3284-4da1-95d5-32548150aa04"
-    },
-    {
-      "source": [
-        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(64) end"
-      ],
-      "_id": "600a045a42d26af1a47aa316",
-      "id": "fc37aef5-6270-4397-81da-03e63a34085b"
+      "_id": "600a0a4742d26a07ea7aa3a6",
+      "id": "4eadf8a3-85d7-47f2-bfdc-fb791cc32e7f"
     }
   ],
   "reactions": [],
