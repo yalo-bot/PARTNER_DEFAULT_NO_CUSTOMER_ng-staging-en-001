@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(58) end"
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(62) end"
       ],
-      "_id": "6008bae82737fa82bdfc951c",
+      "_id": "6008c7512737fa47dffc9540",
       "id": "c90e99f1-1ffe-46d2-8889-2cd5efb1682d"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[second]])"
       ],
-      "_id": "6008bae82737fa4e1dfc951b",
+      "_id": "6008c7512737fa428cfc953f",
       "id": "128161df-71f4-4102-9e1f-78510e4f635c"
     }
   ],
