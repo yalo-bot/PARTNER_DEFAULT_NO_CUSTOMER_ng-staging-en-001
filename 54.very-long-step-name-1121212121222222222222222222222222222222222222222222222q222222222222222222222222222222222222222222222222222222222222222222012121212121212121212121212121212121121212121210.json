@@ -1,0 +1,55 @@
+{
+  "_id": "6008b67c2737fa0191fc9460",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 54,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(57) end"
+      ],
+      "_id": "60098bcb42d26a1f4c7aa287",
+      "id": "acec5a9e-c0e8-4d70-ba6f-8878017f7672"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[first]])"
+      ],
+      "_id": "60098bcb42d26a7bfc7aa282",
+      "id": "a35b4352-c59e-4e93-89d0-fdc75e5a7712"
+    },
+    {
+      "source": [
+        "Template.compile([[first 2]])"
+      ],
+      "_id": "60098bcb42d26a6d6b7aa283",
+      "id": "df8baa12-c62f-44fd-bac7-3fcc38adf893"
+    },
+    {
+      "source": [
+        "Template.compile([[first 3]])"
+      ],
+      "_id": "60098bcb42d26a1b637aa284",
+      "id": "e339d1e3-94c9-4a5b-b173-59836dd20a9c"
+    },
+    {
+      "source": [
+        "Template.compile([[first 4]])"
+      ],
+      "_id": "60098bcb42d26aaea27aa285",
+      "id": "95643a5d-683a-4bed-a8f4-cd243c84b941"
+    },
+    {
+      "source": [
+        "Template.compile([[first 5]])"
+      ],
+      "_id": "60098bcb42d26a3abd7aa286",
+      "id": "183b7919-f141-4d75-a82b-4cd38666bcc4"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "very-long-step-name-1121212121222222222222222222222222222222222222222222222q222222222222222222222222222222222222222222222222222222222222222222012121212121212121212121212121212121121212121210"
+}
