@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "local userId = Context.get('userId')\n\nif (userId) then\n    Workflow.branch(64)\nelse \n    Workflow.branch(65)"
+        "local userId = Context.get('userId')\n\nif (userId) then\n   Workflow.branch(64)\nelse\n   Workflow.branch(65)\nend"
       ],
-      "_id": "600a0e2a42d26a7e317aa44b",
+      "_id": "600a0e9542d26a2c607aa4b0",
       "id": "6131076c-457b-4eaf-9491-de195630d587"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Init]])"
       ],
-      "_id": "600a0e2a42d26a077c7aa44a",
+      "_id": "600a0e9542d26a5c867aa4af",
       "id": "3885621a-31e4-4454-9f73-75a7b8d08384"
     }
   ],
