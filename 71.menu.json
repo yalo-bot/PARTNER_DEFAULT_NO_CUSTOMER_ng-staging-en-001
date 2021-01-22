@@ -1,0 +1,19 @@
+{
+  "_id": "600b040942d26aa1c17aa72a",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 71,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hello! You're in the *menu* step. Please select one of these options:\n\n- Andre\n- Christian\n- Diego\n- Jorge\n- Juan\n- Kyle\n- Lupita\n- Marco\n- Mars\n- Moi\n- Pabel\n- Renato\n- Ricardo\n- Xoch]])"
+      ],
+      "_id": "600b062f42d26ac2687aa731",
+      "id": "38b1bbf6-40a7-494c-ac73-3f99957c700b"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "menu"
+}
