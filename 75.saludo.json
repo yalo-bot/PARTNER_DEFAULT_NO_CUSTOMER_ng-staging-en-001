@@ -1,0 +1,19 @@
+{
+  "_id": "600b45cc42d26a1bc77aa75f",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 75,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hola {{myName}}]])"
+      ],
+      "_id": "600b472942d26a2f947aa77b",
+      "id": "9c75d387-76ae-47e0-9674-d489590c6e97"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "saludo"
+}

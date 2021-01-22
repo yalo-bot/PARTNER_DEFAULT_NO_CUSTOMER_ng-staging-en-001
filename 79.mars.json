@@ -1,0 +1,19 @@
+{
+  "_id": "600b462f42d26a45b37aa767",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 79,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[:P]])"
+      ],
+      "_id": "600b463e42d26a977e7aa768",
+      "id": "be375b64-c14c-4afb-b5b0-54f2e855ab10"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "mars"
+}
