@@ -8,7 +8,7 @@
       "source": [
         "context.set(\"nombre\", Context.get(\"currentMessage\"))"
       ],
-      "_id": "600b48d442d26a721a7aa826",
+      "_id": "600b4ad742d26a556c7aa8a4",
       "id": "6b992e80-5e53-4fe8-afc9-bfe065e77f24"
     }
   ],
@@ -17,18 +17,18 @@
       "source": [
         "Template.compile([[Bienvenido al himalaya!! 🍦]])"
       ],
-      "_id": "600b48d442d26a168d7aa824",
+      "_id": "600b4ad742d26a6d937aa8a2",
       "id": "90f8e791-d6a2-4f80-af65-f80d5a0e6e2d"
     },
     {
       "source": [
         "Template.compile([[Cómo te llamas? 🤔]])"
       ],
-      "_id": "600b48d442d26a72a17aa825",
+      "_id": "600b4ad742d26a55b37aa8a3",
       "id": "e2df980b-a628-4e88-b14a-bc37f374e940"
     }
   ],
   "triggers": [],
   "__v": 0,
-  "name": ""
+  "name": "juan"
 }

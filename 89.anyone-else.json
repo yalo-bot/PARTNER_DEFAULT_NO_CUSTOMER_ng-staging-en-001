@@ -1,0 +1,19 @@
+{
+  "_id": "600b4a6442d26a6d677aa89b",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 89,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Welcome to Kyle's area!]])"
+      ],
+      "_id": "600b4ad142d26adc847aa8a1",
+      "id": "b7c3283c-9141-4a6b-a9d8-131aae457fb2"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "anyone-else"
+}

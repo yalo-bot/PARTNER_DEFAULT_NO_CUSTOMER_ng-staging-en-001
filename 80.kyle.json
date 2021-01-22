@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Context.get(\"userId\") == \"+14154305703\" then\n    Context.set(\"own\") = true\nend\n"
+        "if Context.get(\"userId\") == \"+14154305703\" then\n    Workflow.branch(82)\nelse\n    Workflow.branch(89)\nend"
       ],
-      "_id": "600b4a3c42d26a66b17aa86a",
+      "_id": "600b4ab142d26a50e37aa89f",
       "id": "bd66f5b0-4233-44e6-aeb2-0561e2ebac86"
     }
   ],

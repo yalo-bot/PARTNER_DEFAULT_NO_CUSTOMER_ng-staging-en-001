@@ -3,7 +3,15 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 87,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "Context.set(\"myVar\", Context.get(\"currentMessage\"))"
+      ],
+      "_id": "600b4aaa42d26a25297aa89e",
+      "id": "9a58ac1c-f92c-47ae-9036-5319379b44d1"
+    }
+  ],
   "reactions": [],
   "triggers": [],
   "__v": 0,
