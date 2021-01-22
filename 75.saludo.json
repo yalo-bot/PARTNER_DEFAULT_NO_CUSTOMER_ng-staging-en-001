@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match(\"contains\", \"broma\") then\n    local webhookResponse = Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\n    local joke = webhookResponse.value\n\n    Context.set(\"broma\", joke)\n    Workflow.branch(96)\n\nend\n"
+        "if Input.match(\"contains\", \"broma|Broma|BROMA\", Context.get(\"currentMessage\"), \"\") then\n    local webhookResponse = Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\n    local joke = webhookResponse.value\n\n    Context.set(\"broma\", joke)\n    Workflow.branch(96)\n\nend\n"
       ],
-      "_id": "600b563142d26a6b507ab993",
+      "_id": "600b571c42d26aa36e7ab9ec",
       "id": "c6d93857-4b8b-44af-bc83-48e771864de9"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile([[Hola {{marconame}}]])"
       ],
-      "_id": "600b563142d26abf1c7ab991",
+      "_id": "600b571c42d26a97157ab9ea",
       "id": "9c75d387-76ae-47e0-9674-d489590c6e97"
     },
     {
       "source": [
         "Template.compile([[Para saber una broma de Chuck Norris, escribe broma\n\nEscribe menu para regresar]])"
       ],
-      "_id": "600b563142d26a4ee37ab992",
+      "_id": "600b571c42d26ae89c7ab9eb",
       "id": "2a448694-144f-426f-8cc4-74d68e21fbc0"
     }
   ],
