@@ -8,14 +8,14 @@
       "source": [
         "if Input.match('contains', '', Context.get('currentMessage'), {}) then  end"
       ],
-      "_id": "600a1f7842d26a03eb7aa52a",
+      "_id": "600a207542d26a7bf57aa53c",
       "id": "3f56b239-1523-4717-994c-0ae3865055a7"
     },
     {
       "source": [
-        "Workflow.branch(67)"
+        "Workflow.branch(67)\nprint(\"second\")"
       ],
-      "_id": "600a1f7842d26a73dd7aa52b",
+      "_id": "600a207542d26a29d77aa53d",
       "id": "2cd7ab00-548f-409c-a59f-63297543e558"
     }
   ],
@@ -24,7 +24,7 @@
       "source": [
         "Template.compile([[Second]])"
       ],
-      "_id": "600a1f7842d26a785b7aa529",
+      "_id": "600a207542d26ac2a67aa53b",
       "id": "cf09c8e0-8802-4acf-905e-726f1d8d836b"
     }
   ],
