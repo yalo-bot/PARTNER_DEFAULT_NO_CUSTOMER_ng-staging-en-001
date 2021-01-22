@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Context.set(\"broma\", Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", ''))\n\nWorkflow.branch(100)\n"
+        "local webhookResponse = Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\nlocal joke = webhookResponse.value\n\nContext.set(\"broma\", joke)\n\nWorkflow.branch(100)\n"
       ],
-      "_id": "600b515042d26a63db7ab444",
+      "_id": "600b529842d26a8e667ab5f9",
       "id": "8374df6f-7b67-4a2d-a199-dcb162f6075a"
     }
   ],
