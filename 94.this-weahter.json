@@ -8,16 +8,16 @@
       "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(74) end"
       ],
-      "_id": "600b4e8642d26a84417aacb4",
+      "_id": "600b50df42d26a84807ab28d",
       "id": "94e6fd6e-782d-4546-819e-c9e9d3942898"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[hi]])"
+        "Template.compile([[Its a beautiful day in {{city}} \n\nwith a nice {{temp}} C Wheather\n\nAnd sky looking {{condition}}\n\nPlease... enjoy today!]])"
       ],
-      "_id": "600b4e8642d26a72637aacb3",
+      "_id": "600b50df42d26aba9c7ab28c",
       "id": "40abae16-abd9-4435-8e24-18d28a118364"
     }
   ],

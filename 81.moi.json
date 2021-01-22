@@ -8,7 +8,7 @@
       "source": [
         "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(84) end"
       ],
-      "_id": "600b4a4742d26aaf177aa86c",
+      "_id": "600b508b42d26a3fa97ab283",
       "id": "190508b4-ac72-49bd-9883-76d567484e1a"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Welcome to Moi flow\n\nPress any key to continue]])"
       ],
-      "_id": "600b4a4742d26ae0057aa86b",
+      "_id": "600b508b42d26a0a7f7ab282",
       "id": "355a0a4c-4f86-4eb7-8a2c-cebc6214d2f5"
     }
   ],
