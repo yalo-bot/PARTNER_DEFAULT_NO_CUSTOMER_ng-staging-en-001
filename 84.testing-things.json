@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Context.set(\"unity\", context.get(\"currentText\"))\nDebug.info(Context.get(\"unity\"))\nWorkflow.branch(81)"
+        "Context.set(\"unity\", context.get(\"currentText\"))\nDebug.print(Context.get(\"unity\"))\nWorkflow.branch(81)"
       ],
-      "_id": "600b4ddb42d26ae79e7aaae3",
+      "_id": "600b4e1342d26ac7707aab77",
       "id": "19f79bf2-d23b-4f6c-bf6b-2fee83c36985"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[👍]])"
       ],
-      "_id": "600b4ddb42d26a40807aaae2",
+      "_id": "600b4e1342d26aefd57aab76",
       "id": "6a60b73b-d935-4da5-98c9-b06b1e798336"
     }
   ],
