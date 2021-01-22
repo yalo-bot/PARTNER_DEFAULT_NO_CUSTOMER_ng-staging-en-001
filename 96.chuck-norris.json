@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')"
+        "Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\nWorkflow.branch(75)"
       ],
-      "_id": "600b4fc742d26aa41f7aaf26",
+      "_id": "600b501d42d26acad17ab0d9",
       "id": "8374df6f-7b67-4a2d-a199-dcb162f6075a"
     }
   ],
