@@ -3,13 +3,21 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 89,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "Workflow.branch(71)"
+      ],
+      "_id": "600b598442d26ad87d7abbab",
+      "id": "6002085b-6399-4b71-bee5-f0719becf3e7"
+    }
+  ],
   "reactions": [
     {
       "source": [
         "Template.compile([[You're not Kyle! Type anything to go back to menu.]])"
       ],
-      "_id": "600b591442d26a4f777abaf5",
+      "_id": "600b598442d26a78fd7abbaa",
       "id": "b7c3283c-9141-4a6b-a9d8-131aae457fb2"
     }
   ],
