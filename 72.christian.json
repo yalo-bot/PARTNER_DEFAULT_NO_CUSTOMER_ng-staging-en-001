@@ -1,0 +1,19 @@
+{
+  "_id": "600b066c42d26a1da87aa736",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 72,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Welcome to Christian's flow!]])"
+      ],
+      "_id": "600b067c42d26a2f827aa737",
+      "id": "11036dd4-103b-4450-9d50-2dd48e9e20bc"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "christian"
+}

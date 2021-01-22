@@ -3,13 +3,21 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 71,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "if Input.match('contains', 'Christian|christian', Context.get('currentMessage'), {}) then Workflow.branch(72) end"
+      ],
+      "_id": "600b068e42d26a4b167aa739",
+      "id": "67be9ee3-f298-4a19-97df-ed66c281c225"
+    }
+  ],
   "reactions": [
     {
       "source": [
         "Template.compile([[Hello! You're in the *menu* step. Please select one of these options:\n\n- Andre\n- Christian\n- Diego\n- Jorge\n- Juan\n- Kyle\n- Lupita\n- Marco\n- Mars\n- Moi\n- Pabel\n- Renato\n- Ricardo\n- Xoch]])"
       ],
-      "_id": "600b062f42d26ac2687aa731",
+      "_id": "600b068e42d26a633b7aa738",
       "id": "38b1bbf6-40a7-494c-ac73-3f99957c700b"
     }
   ],
