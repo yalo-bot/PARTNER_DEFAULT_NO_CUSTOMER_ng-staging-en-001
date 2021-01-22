@@ -8,11 +8,19 @@
       "source": [
         "if Context.get(\"userId\") == \"+14154305703\" then\n    Workflow.branch(82)\nelse\n    Workflow.branch(89)\nend"
       ],
-      "_id": "600b4b7542d26a35927aa8e2",
+      "_id": "600b57c042d26a71897aba44",
       "id": "bd66f5b0-4233-44e6-aeb2-0561e2ebac86"
     }
   ],
-  "reactions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Type next.]])"
+      ],
+      "_id": "600b57c042d26af0a77aba43",
+      "id": "c898316b-ae1d-4156-ae8a-7ec794912cd1"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "kyle"
