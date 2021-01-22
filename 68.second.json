@@ -1,0 +1,34 @@
+{
+  "_id": "600a1f3b42d26a782e7aa51d",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 68,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('contains', '', Context.get('currentMessage'), {}) then  end"
+      ],
+      "_id": "600a1f7842d26a03eb7aa52a",
+      "id": "3f56b239-1523-4717-994c-0ae3865055a7"
+    },
+    {
+      "source": [
+        "Workflow.branch(67)"
+      ],
+      "_id": "600a1f7842d26a73dd7aa52b",
+      "id": "2cd7ab00-548f-409c-a59f-63297543e558"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Second]])"
+      ],
+      "_id": "600a1f7842d26a785b7aa529",
+      "id": "cf09c8e0-8802-4acf-905e-726f1d8d836b"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "second"
+}
