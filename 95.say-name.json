@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Workflow.branch(71)\n"
+        "local message = Context.get(\"currentMessage\")\n\nInvoke.webhook(\"https://hooks.zapier.com/hooks/catch/9350359/ox2uqoe/\", \"POST\", '{\"text\":\"' .. message .. '\"}')\n\nWorkflow.branch(71)\n"
       ],
-      "_id": "600b500a42d26a74ff7ab02d",
+      "_id": "600b5f7a42d26a1b077abee4",
       "id": "1e3f89bd-bb7d-474c-999c-3d42be0cbcba"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile([[Hello there {{name}}!]])"
       ],
-      "_id": "600b500a42d26a468b7ab02b",
+      "_id": "600b5f7a42d26ab07f7abee2",
       "id": "248444aa-cefa-4730-97bd-148cde484daf"
     },
     {
       "source": [
-        "Template.compile([[Type anything to go back to menu.]])"
+        "Template.compile([[Now type something to trigger a webhook.]])"
       ],
-      "_id": "600b500a42d26a335a7ab02c",
+      "_id": "600b5f7a42d26a5a007abee3",
       "id": "51993a39-f109-4ec9-b92b-36a7398aa7da"
     }
   ],
