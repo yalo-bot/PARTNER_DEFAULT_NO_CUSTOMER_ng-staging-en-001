@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Workflow.branch(71)"
+        "local name = Context.set(\"name\", Context.get(\"currentMessage\"))\n\nWorkflow.branch(71)\n"
       ],
-      "_id": "600b06aa42d26a543f7aa744",
+      "_id": "600b47cb42d26ae3b57aa7c4",
       "id": "4b264dca-01f1-408d-a2cc-2dcf81f2c31e"
     }
   ],
@@ -17,8 +17,15 @@
       "source": [
         "Template.compile([[Welcome to Christian's flow!]])"
       ],
-      "_id": "600b06aa42d26abb427aa743",
+      "_id": "600b47cb42d26ac2e57aa7c2",
       "id": "11036dd4-103b-4450-9d50-2dd48e9e20bc"
+    },
+    {
+      "source": [
+        "Template.compile([[What's your name?]])"
+      ],
+      "_id": "600b47cb42d26a350b7aa7c3",
+      "id": "b9acd1b7-4bc6-4262-8d8c-71ecca0f9147"
     }
   ],
   "triggers": [],

@@ -7,9 +7,9 @@
   "reactions": [
     {
       "source": [
-        "Template.compile([[Hola {{myName}}]])"
+        "Template.compile([[Hola {{marconame}}]])"
       ],
-      "_id": "600b472942d26a2f947aa77b",
+      "_id": "600b483a42d26aa7327aa7d1",
       "id": "9c75d387-76ae-47e0-9674-d489590c6e97"
     }
   ],

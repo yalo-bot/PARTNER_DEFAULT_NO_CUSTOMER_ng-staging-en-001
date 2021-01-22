@@ -1,0 +1,11 @@
+{
+  "_id": "600b482542d26a36527aa7c6",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 87,
+  "type": "step",
+  "actions": [],
+  "reactions": [],
+  "triggers": [],
+  "__v": 0,
+  "name": "xoch-menu"
+}

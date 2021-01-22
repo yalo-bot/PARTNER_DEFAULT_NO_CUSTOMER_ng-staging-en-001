@@ -6,21 +6,13 @@
   "actions": [
     {
       "source": [
-        "Context.set(\"myName\",Context.get(\"currentMessage\"))\nWorkflow.branch(75)"
+        "Context.set(\"marconame\",Context.get(\"currentMessage\"))\nWorkflow.branch(75)"
       ],
-      "_id": "600b471c42d26aa1a77aa77a",
+      "_id": "600b483042d26abed67aa7cf",
       "id": "de8bd9f4-ec38-4f13-a5d6-d922254198b5"
     }
   ],
-  "reactions": [
-    {
-      "source": [
-        "Template.compile([[Hola {{}}]])"
-      ],
-      "_id": "600b471c42d26a19837aa779",
-      "id": "f6926f24-b190-4d25-b824-e895ff817ea5"
-    }
-  ],
+  "reactions": [],
   "triggers": [],
   "__v": 0,
   "name": "marco"

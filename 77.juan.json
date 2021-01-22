@@ -4,7 +4,15 @@
   "id": 77,
   "type": "step",
   "actions": [],
-  "reactions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Bienvenido al himalaya!! 🍦]])"
+      ],
+      "_id": "600b47a542d26a47927aa7b8",
+      "id": "90f8e791-d6a2-4f80-af65-f80d5a0e6e2d"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "juan"

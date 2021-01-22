@@ -4,7 +4,15 @@
   "id": 81,
   "type": "step",
   "actions": [],
-  "reactions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Moi]])"
+      ],
+      "_id": "600b478942d26af8997aa7b7",
+      "id": "355a0a4c-4f86-4eb7-8a2c-cebc6214d2f5"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "moi"

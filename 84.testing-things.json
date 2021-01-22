@@ -1,0 +1,11 @@
+{
+  "_id": "600b47a642d26a91cb7aa7b9",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 84,
+  "type": "step",
+  "actions": [],
+  "reactions": [],
+  "triggers": [],
+  "__v": 0,
+  "name": "testing-things"
+}
