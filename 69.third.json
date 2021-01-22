@@ -1,0 +1,27 @@
+{
+  "_id": "600a2c6d42d26a99a17aa5f4",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 69,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "Workflow.branch(67)"
+      ],
+      "_id": "600a2d7a42d26accfc7aa617",
+      "id": "16816a7e-0819-4531-af6f-9fbb76c24107"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[third]])"
+      ],
+      "_id": "600a2d7a42d26a25507aa616",
+      "id": "70a0c057-78b5-49eb-b3a7-708f5f516c87"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "third"
+}
