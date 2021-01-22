@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "local city = Context.get('currentMessage')\nContext.set('city', city)\n\nlocal hook = \"http://api.weatherapi.com/v1/current.json?key=98dde8c07fce46b2843215719212201&q=\"..Context.get('city')\n\nlocal data = Invoke.webhook(hook, 'GET', '')\nlocal temp = data.current.temp_c\n\nDebug.print(temp)\n\nWorkflow.branch(94)"
+        "local city = Context.get('currentMessage')\nContext.set('city', city)\n\nlocal hook = \"http://api.weatherapi.com/v1/current.json?key=98dde8c07fce46b2843215719212201&q=\"..Context.get('city')\n\nlocal data = Invoke.webhook(hook, 'GET', '')\nlocal temp = data.current.temp_c\n\nDebug.print(tostring(temp))\n\nWorkflow.branch(94)"
       ],
-      "_id": "600b501842d26a340c7ab081",
+      "_id": "600b505c42d26a61117ab22b",
       "id": "40574044-7b8e-4cc2-b99a-58729c46d752"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Welcome {{visitor}},\n\nPlease let me know the city where you live in:]])"
       ],
-      "_id": "600b501842d26ac18b7ab080",
+      "_id": "600b505c42d26a46667ab22a",
       "id": "7be0dcd8-e98b-4415-ae10-880574cad004"
     }
   ],
