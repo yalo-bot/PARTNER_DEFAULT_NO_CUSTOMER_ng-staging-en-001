@@ -3,8 +3,24 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 90,
   "type": "step",
-  "actions": [],
-  "reactions": [],
+  "actions": [
+    {
+      "source": [
+        "if Input.match('contains', 'menu|Menu|MENU', Context.get('currentMessage'), {}) then Workflow.branch(83) end"
+      ],
+      "_id": "600b4c0642d26abdff7aa987",
+      "id": "14069bf3-a380-4849-baa5-523f73e6721a"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[test {{myVar}}]])"
+      ],
+      "_id": "600b4c0642d26a4fbd7aa986",
+      "id": "f28b7895-e510-42dd-b594-2d6bc9ed311d"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "xoch-hr-1"

@@ -3,13 +3,21 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 74,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "local visitor = Context.get('currentMessage')\nContext.set('visitor', visitor)\n\nWorkflow.branch(91)"
+      ],
+      "_id": "600b4c1f42d26aef107aa999",
+      "id": "855becdd-f209-4a5b-a0d9-345f663c696b"
+    }
+  ],
   "reactions": [
     {
       "source": [
         "Template.compile([[Hello friend, What is your name?]])"
       ],
-      "_id": "600b4b6142d26a6f9e7aa8e0",
+      "_id": "600b4c1f42d26aae2f7aa998",
       "id": "56022438-98c6-48ec-b648-24542f3285b3"
     }
   ],

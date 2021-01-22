@@ -8,8 +8,15 @@
       "source": [
         "Context.set(\"variable-name\", Context.get(\"currentMessage\"))"
       ],
-      "_id": "600b4be642d26a81a07aa93e",
+      "_id": "600b4c2042d26ac41d7aa99b",
       "id": "eaa9b523-df10-47ea-957c-72513442b345"
+    },
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(79) end"
+      ],
+      "_id": "600b4c2042d26aa2ac7aa99c",
+      "id": "8fe4abbc-be71-4a64-b039-c5f2a83c1615"
     }
   ],
   "reactions": [
@@ -17,7 +24,7 @@
       "source": [
         "Template.compile([[cómo te llamas?]])"
       ],
-      "_id": "600b4be642d26a31877aa93d",
+      "_id": "600b4c2042d26a81667aa99a",
       "id": "69976ed1-c1b7-4cc4-ab60-8bc8d28a81df"
     }
   ],

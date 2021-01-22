@@ -1,0 +1,19 @@
+{
+  "_id": "600b4bc842d26ab0c57aa93a",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 91,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Welcome {{visitor}},\n\nPlease let me know the city where you live in:]])"
+      ],
+      "_id": "600b4bf742d26a367b7aa977",
+      "id": "7be0dcd8-e98b-4415-ae10-880574cad004"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "welcome-to-ricardoland"
+}
