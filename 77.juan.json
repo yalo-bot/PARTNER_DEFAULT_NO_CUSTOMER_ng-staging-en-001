@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "context.set(\"nombre\", Context.get(\"currentMessage\"))\n\ncontext.set(\"telefono\", Context.get(\"userId\"))\n\nbranch(\"juan-2\")"
+        "context.set(\"nombre\", Context.get(\"currentMessage\"))\n\nContext.set(\"telefono\", Context.get(\"userId\"))\n\nWorkflow.branch(92)"
       ],
-      "_id": "600b4dd042d26a624c7aaadf",
+      "_id": "600b4f2242d26a6d787aad82",
       "id": "6b992e80-5e53-4fe8-afc9-bfe065e77f24"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile([[Bienvenido al himalaya!! 🍦]])"
       ],
-      "_id": "600b4dd042d26a244a7aaadd",
+      "_id": "600b4f2242d26af2517aad80",
       "id": "90f8e791-d6a2-4f80-af65-f80d5a0e6e2d"
     },
     {
       "source": [
         "Template.compile([[Cómo te llamas? 🤔]])"
       ],
-      "_id": "600b4dd042d26a291e7aaade",
+      "_id": "600b4f2242d26a95de7aad81",
       "id": "e2df980b-a628-4e88-b14a-bc37f374e940"
     }
   ],
