@@ -8,7 +8,7 @@
       "source": [
         "Workflow.branch(71)"
       ],
-      "_id": "600b618742d26a587e7ac0b2",
+      "_id": "600b625c42d26a58eb7ac117",
       "id": "e7cc3bd9-2a44-450c-9b9d-6f6fe883f6d3"
     }
   ],
@@ -17,11 +17,11 @@
       "source": [
         "Template.compile([[go to gooogle sheet and check out the new row.]])"
       ],
-      "_id": "600b618742d26a98657ac0b1",
+      "_id": "600b625c42d26a09b47ac116",
       "id": "ea3f9d4f-88ed-462b-bc8c-da1c8ccaada3"
     }
   ],
   "triggers": [],
   "__v": 0,
-  "name": "googlesheet"
+  "name": "google-sheet"
 }
