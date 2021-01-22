@@ -6,19 +6,40 @@
   "actions": [
     {
       "source": [
-        "if Context.get('currentMessage') == 'third' then\n    Workflow.branch(69)\nelse\n    Workflow.branch(68)\nend"
+        "if Input.match('contains', 'si|Si|yo tambien|Yo tambien|sii|siiii|siii|siiiii', Context.get('currentMessage'), {}) then Workflow.branch(68) end"
       ],
-      "_id": "600a2df442d26af0977aa64c",
-      "id": "a01ba080-faf9-4ae0-aef6-966e28cad41b"
+      "_id": "600a2ffa42d26a30907aa698",
+      "id": "9396d78a-9209-4848-805d-e08e180cac46"
+    },
+    {
+      "source": [
+        "if Input.match('contains', 'no|No|Yo no|yo no', Context.get('currentMessage'), {}) then Workflow.branch(69) end"
+      ],
+      "_id": "600a2ffa42d26ab3777aa699",
+      "id": "73e305dc-046f-4356-ab35-ab048d4edbb7"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[Init]])"
+        "Template.compile([[Hola Estefy]])"
       ],
-      "_id": "600a2df442d26a18297aa64b",
+      "_id": "600a2ffa42d26a5ed57aa695",
       "id": "1bce5980-5e6c-466b-86f8-28977aeee14d"
+    },
+    {
+      "source": [
+        "Template.compile([[Te quiero mucho]])"
+      ],
+      "_id": "600a2ffa42d26ad7467aa696",
+      "id": "a7f2fbf1-f710-4ca6-8796-67433d832cd1"
+    },
+    {
+      "source": [
+        "Template.compile([[Tu?]])"
+      ],
+      "_id": "600a2ffa42d26ad7d27aa697",
+      "id": "985371a0-5995-4ee0-a46b-c335e688c8a9"
     }
   ],
   "triggers": [],
