@@ -8,7 +8,7 @@
       "source": [
         "Context.set(\"variable-name\", Context.get(\"currentMessage\"))"
       ],
-      "_id": "600b48e442d26a00307aa82e",
+      "_id": "600b4b7142d26a0a587aa8e1",
       "id": "eaa9b523-df10-47ea-957c-72513442b345"
     }
   ],

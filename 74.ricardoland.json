@@ -4,7 +4,15 @@
   "id": 74,
   "type": "step",
   "actions": [],
-  "reactions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hello friend, What is your name?]])"
+      ],
+      "_id": "600b4b6142d26a6f9e7aa8e0",
+      "id": "56022438-98c6-48ec-b648-24542f3285b3"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "ricardoland"
