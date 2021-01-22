@@ -3,7 +3,15 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 96,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')"
+      ],
+      "_id": "600b4f2942d26a02287aadd9",
+      "id": "8374df6f-7b67-4a2d-a199-dcb162f6075a"
+    }
+  ],
   "reactions": [],
   "triggers": [],
   "__v": 0,
