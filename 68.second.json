@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Debug.print('debug print: fallback')\nWorkflow.branch(67)"
+        "Workflow.branch(67)\nDebug.print('debug print: fallback')"
       ],
-      "_id": "600a28c842d26a7a527aa595",
+      "_id": "600a28ea42d26a51687aa5a3",
       "id": "2cd7ab00-548f-409c-a59f-63297543e558"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Second]])"
       ],
-      "_id": "600a28c842d26a5cd37aa594",
+      "_id": "600a28ea42d26ade5d7aa5a2",
       "id": "cf09c8e0-8802-4acf-905e-726f1d8d836b"
     }
   ],
