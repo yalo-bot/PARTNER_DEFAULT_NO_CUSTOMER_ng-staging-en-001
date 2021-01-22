@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(74) end"
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "600b50df42d26a84807ab28d",
+      "_id": "600b535442d26a07457ab658",
       "id": "94e6fd6e-782d-4546-819e-c9e9d3942898"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Its a beautiful day in {{city}} \n\nwith a nice {{temp}} C Wheather\n\nAnd sky looking {{condition}}\n\nPlease... enjoy today!]])"
       ],
-      "_id": "600b50df42d26aba9c7ab28c",
+      "_id": "600b535442d26a15877ab657",
       "id": "40abae16-abd9-4435-8e24-18d28a118364"
     }
   ],

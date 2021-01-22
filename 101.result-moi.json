@@ -1,0 +1,19 @@
+{
+  "_id": "600b530042d26a6da47ab652",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 101,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Factorial is {{factorial}}]])"
+      ],
+      "_id": "600b534842d26a74417ab656",
+      "id": "c0b4563d-508d-4a6d-9ddb-860ef6349564"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "result-moi"
+}
