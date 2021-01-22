@@ -8,16 +8,23 @@
       "source": [
         "if Input.match('contains', 'Christian|christian', Context.get('currentMessage'), {}) then Workflow.branch(72) end"
       ],
-      "_id": "600b068e42d26a4b167aa739",
+      "_id": "600b453642d26a81e17aa752",
       "id": "67be9ee3-f298-4a19-97df-ed66c281c225"
+    },
+    {
+      "source": [
+        "if Input.match('contains', 'Marco|marco', Context.get('currentMessage'), {}) then Workflow.branch(73) end"
+      ],
+      "_id": "600b453642d26ab82f7aa753",
+      "id": "3656155b-1f6c-4abd-b3b3-838b88371342"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[Hello! You're in the *menu* step. Please select one of these options:\n\n- Andre\n- Christian\n- Diego\n- Jorge\n- Juan\n- Kyle\n- Lupita\n- Marco\n- Mars\n- Moi\n- Pabel\n- Renato\n- Ricardo\n- Xoch]])"
+        "Template.compile([[Hello! You're in the *menu* step. Please select one of these options:\n\n- Andre\n- Christian\n- Diego\n- Feil\n- Jorge\n- Juan\n- Kyle\n- Lupita\n- Marco\n- Mars\n- Moi\n- Pabel\n- Renato\n- Ricardo\n- Xoch]])"
       ],
-      "_id": "600b068e42d26a633b7aa738",
+      "_id": "600b453642d26ab2ca7aa751",
       "id": "38b1bbf6-40a7-494c-ac73-3f99957c700b"
     }
   ],
