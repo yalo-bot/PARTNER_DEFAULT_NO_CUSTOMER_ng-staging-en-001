@@ -3,8 +3,24 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 94,
   "type": "step",
-  "actions": [],
-  "reactions": [],
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(74) end"
+      ],
+      "_id": "600b4e8642d26a84417aacb4",
+      "id": "94e6fd6e-782d-4546-819e-c9e9d3942898"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[hi]])"
+      ],
+      "_id": "600b4e8642d26a72637aacb3",
+      "id": "40abae16-abd9-4435-8e24-18d28a118364"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "this-weahter"
