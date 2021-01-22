@@ -3,14 +3,29 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 95,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "Workflow.branch(72)\n"
+      ],
+      "_id": "600b4dc942d26a85957aaadc",
+      "id": "1e3f89bd-bb7d-474c-999c-3d42be0cbcba"
+    }
+  ],
   "reactions": [
     {
       "source": [
         "Template.compile([[Hello there {{name}}!]])"
       ],
-      "_id": "600b4d7042d26ac0dd7aaa89",
+      "_id": "600b4dc942d26a3f017aaada",
       "id": "248444aa-cefa-4730-97bd-148cde484daf"
+    },
+    {
+      "source": [
+        "Template.compile([[Type anything to go back to Christian's menu.]])"
+      ],
+      "_id": "600b4dc942d26aa0367aaadb",
+      "id": "51993a39-f109-4ec9-b92b-36a7398aa7da"
     }
   ],
   "triggers": [],

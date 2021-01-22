@@ -7,9 +7,9 @@
   "reactions": [
     {
       "source": [
-        "Template.compile([[Hola *{{nombre}}* qué pedo? ]])"
+        "Template.compile([[Hola *{{nombre}}* qué pedo?\nTu número de teléfono es *{{telefono}}*]])"
       ],
-      "_id": "600b4c9342d26aa0047aaa77",
+      "_id": "600b4ddb42d26a566f7aaae1",
       "id": "f127c2be-eb66-493f-a5d3-e98328eb8747"
     }
   ],
