@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Context.set(\"unity\", Context.get(\"currentMessage\"))\n\nfunction fact (n)\n  if n <= 0 then\n    return 1\n  else\n    return n * fact(n-1)\n  end\nend\n\nlocal number = tonumber(Context.get(\"currentMessage\"))\n\n\nlocal result = fact(number)\nDebug.print(tostring(result))\n\nWorkflow.branch(81)"
+        "Context.set(\"unity\", Context.get(\"currentMessage\"))\n\nfunction fact (n)\n  if n <= 0 then\n    return 1\n  else\n    return n * fact(n-1)\n  end\nend\n\nlocal number = tonumber(Context.get(\"currentMessage\"))\n\nif(number)\n    local result = fact(number)\n    Debug.print(tostring(result))\nelse\n    Debug.print(\"I think that is not a number\")\nend\n\nWorkflow.branch(81)"
       ],
-      "_id": "600b51f342d26a1f217ab54a",
+      "_id": "600b526342d26a18bc7ab5a2",
       "id": "19f79bf2-d23b-4f6c-bf6b-2fee83c36985"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Write a number to know its factorial]])"
       ],
-      "_id": "600b51f342d26a18a87ab549",
+      "_id": "600b526342d26ae5b97ab5a1",
       "id": "6a60b73b-d935-4da5-98c9-b06b1e798336"
     }
   ],
