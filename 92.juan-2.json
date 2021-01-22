@@ -6,18 +6,18 @@
   "actions": [
     {
       "source": [
-        "Workflow.branch(71)"
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "600b4f9d42d26a20b67aae7f",
-      "id": "c9298ccc-35ed-443f-9034-4a4d1b58bdae"
+      "_id": "600b540642d26a67267ab7c5",
+      "id": "2e5f9a28-d415-4673-a1bc-2c4358640993"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[Hola *{{nombre}}* qué pedo?\nTu número de teléfono es *{{telefono}}*]])"
+        "Template.compile([[Hola *{{nombre}}* qué pedo?\nTu número de teléfono es *{{telefono}}*\n\n*Escribe algo para volver al menú*]])"
       ],
-      "_id": "600b4f9d42d26ad94d7aae7e",
+      "_id": "600b540642d26a72b37ab7c4",
       "id": "f127c2be-eb66-493f-a5d3-e98328eb8747"
     }
   ],
