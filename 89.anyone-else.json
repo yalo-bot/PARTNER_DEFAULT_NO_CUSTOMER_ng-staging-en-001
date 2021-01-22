@@ -7,9 +7,9 @@
   "reactions": [
     {
       "source": [
-        "Template.compile([[Welcome to Kyle's area!]])"
+        "Template.compile([[You're not Kyle! Type anything to go back to menu.]])"
       ],
-      "_id": "600b4ad142d26adc847aa8a1",
+      "_id": "600b591442d26a4f777abaf5",
       "id": "b7c3283c-9141-4a6b-a9d8-131aae457fb2"
     }
   ],
