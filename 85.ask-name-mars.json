@@ -1,0 +1,19 @@
+{
+  "_id": "600b47ba42d26ae47f7aa7ba",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 85,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "Context.set(\"variable-name\", Context.get(\"currentMessage\"))"
+      ],
+      "_id": "600b48e442d26a00307aa82e",
+      "id": "eaa9b523-df10-47ea-957c-72513442b345"
+    }
+  ],
+  "reactions": [],
+  "triggers": [],
+  "__v": 0,
+  "name": "ask-name-mars"
+}

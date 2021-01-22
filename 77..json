@@ -1,0 +1,34 @@
+{
+  "_id": "600b460d42d26a35547aa765",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 77,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "context.set(\"nombre\", Context.get(\"currentMessage\"))"
+      ],
+      "_id": "600b48d442d26a721a7aa826",
+      "id": "6b992e80-5e53-4fe8-afc9-bfe065e77f24"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Bienvenido al himalaya!! 🍦]])"
+      ],
+      "_id": "600b48d442d26a168d7aa824",
+      "id": "90f8e791-d6a2-4f80-af65-f80d5a0e6e2d"
+    },
+    {
+      "source": [
+        "Template.compile([[Cómo te llamas? 🤔]])"
+      ],
+      "_id": "600b48d442d26a72a17aa825",
+      "id": "e2df980b-a628-4e88-b14a-bc37f374e940"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": ""
+}

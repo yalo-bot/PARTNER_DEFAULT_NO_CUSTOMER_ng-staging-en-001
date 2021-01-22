@@ -3,8 +3,31 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 83,
   "type": "step",
-  "actions": [],
-  "reactions": [],
+  "actions": [
+    {
+      "source": [
+        "if Input.match('isEqualTo', '1', Context.get('currentMessage'), {}) then Workflow.branch(87) end"
+      ],
+      "_id": "600b491442d26a06ed7aa835",
+      "id": "fdc904d1-2e0a-4981-b4e0-1f40f8a590eb"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[What do you want me to do?]])"
+      ],
+      "_id": "600b491442d26ab8d97aa833",
+      "id": "8604fc9f-91ab-4a9a-b4e5-5106edc0a1ad"
+    },
+    {
+      "source": [
+        "Template.compile([[1.- Gimme the hour?]])"
+      ],
+      "_id": "600b491442d26a10da7aa834",
+      "id": "0d5f2f48-c1b7-4467-a1a2-f6d5c9065cff"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "xoch"

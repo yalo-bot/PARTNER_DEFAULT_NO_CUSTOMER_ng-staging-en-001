@@ -3,14 +3,29 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 75,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "if Input.match('contains', 'Menu|menu|MENU', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+      ],
+      "_id": "600b49e542d26a5e5e7aa838",
+      "id": "3c7bd176-646d-4f70-9ed7-802f8eead45d"
+    }
+  ],
   "reactions": [
     {
       "source": [
         "Template.compile([[Hola {{marconame}}]])"
       ],
-      "_id": "600b483a42d26aa7327aa7d1",
+      "_id": "600b49e542d26a0b387aa836",
       "id": "9c75d387-76ae-47e0-9674-d489590c6e97"
+    },
+    {
+      "source": [
+        "Template.compile([[Escribe menu para regresar]])"
+      ],
+      "_id": "600b49e542d26a4b497aa837",
+      "id": "2a448694-144f-426f-8cc4-74d68e21fbc0"
     }
   ],
   "triggers": [],
