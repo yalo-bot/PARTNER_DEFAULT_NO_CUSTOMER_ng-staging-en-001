@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Debug.info(\"Hello\")"
+        "Debug.info(\"Hello\")\nWorkflow.branch(66)"
       ],
-      "_id": "600a1dfc42d26a06aa7aa4de",
+      "_id": "600a1e4542d26a14d17aa4f1",
       "id": "6131076c-457b-4eaf-9491-de195630d587"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Init]])"
       ],
-      "_id": "600a1dfc42d26aac1a7aa4dd",
+      "_id": "600a1e4542d26a26b87aa4f0",
       "id": "3885621a-31e4-4454-9f73-75a7b8d08384"
     }
   ],
