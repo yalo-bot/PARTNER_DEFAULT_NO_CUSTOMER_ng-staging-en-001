@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('contains', 'menu|Menu|MENU', Context.get('currentMessage'), {}) then Workflow.branch(83) end"
+        "if Input.match('contains', 'menu|Menu|MENU', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "600b4c0642d26abdff7aa987",
+      "_id": "600b5bbb42d26a4fb97abe87",
       "id": "14069bf3-a380-4849-baa5-523f73e6721a"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[test {{myVar}}]])"
       ],
-      "_id": "600b4c0642d26a4fbd7aa986",
+      "_id": "600b5bbb42d26a7a547abe86",
       "id": "f28b7895-e510-42dd-b594-2d6bc9ed311d"
     }
   ],
