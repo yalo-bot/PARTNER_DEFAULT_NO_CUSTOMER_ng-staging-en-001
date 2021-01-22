@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Context.get('currentMessage') == 'third' then\n    Workflow.branch(69)\nelse\n    Workflow.branch(68)"
+        "if Context.get('currentMessage') == 'third' then\n    Workflow.branch(69)\nelse\n    Workflow.branch(68)\nend"
       ],
-      "_id": "600a2dc142d26aa0397aa634",
+      "_id": "600a2df442d26af0977aa64c",
       "id": "a01ba080-faf9-4ae0-aef6-966e28cad41b"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Init]])"
       ],
-      "_id": "600a2dc142d26a8ca37aa633",
+      "_id": "600a2df442d26a18297aa64b",
       "id": "1bce5980-5e6c-466b-86f8-28977aeee14d"
     }
   ],
