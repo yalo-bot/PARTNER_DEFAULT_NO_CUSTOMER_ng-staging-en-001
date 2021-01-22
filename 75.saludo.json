@@ -6,17 +6,10 @@
   "actions": [
     {
       "source": [
-        "if Input.match('contains', 'broma|Broma|BROMA', Context.get('currentMessage'), {}) then Workflow.branch(96) end"
+        "if Input.match(\"contains\", \"broma,Broma,BROMA\") then\n    local webhookResponse = Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\n    local joke = webhookResponse.value\n\n    Context.set(\"broma\", joke)\n    Workflow.branch(96)\n\nend\n"
       ],
-      "_id": "600b4ea442d26a02d87aad28",
-      "id": "3c7bd176-646d-4f70-9ed7-802f8eead45d"
-    },
-    {
-      "source": [
-        "if Input.match('contains', 'menu|Menu|MENU', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
-      ],
-      "_id": "600b4ea442d26a5a047aad29",
-      "id": "61887827-b079-46a4-a808-2567a2a4e377"
+      "_id": "600b556442d26a3f447ab82c",
+      "id": "c6d93857-4b8b-44af-bc83-48e771864de9"
     }
   ],
   "reactions": [
@@ -24,14 +17,14 @@
       "source": [
         "Template.compile([[Hola {{marconame}}]])"
       ],
-      "_id": "600b4ea442d26a379b7aad26",
+      "_id": "600b556442d26afe9b7ab82a",
       "id": "9c75d387-76ae-47e0-9674-d489590c6e97"
     },
     {
       "source": [
         "Template.compile([[Para saber una broma de Chuck Norris, escribe broma\n\nEscribe menu para regresar]])"
       ],
-      "_id": "600b4ea442d26a287f7aad27",
+      "_id": "600b556442d26a47877ab82b",
       "id": "2a448694-144f-426f-8cc4-74d68e21fbc0"
     }
   ],

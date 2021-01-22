@@ -6,13 +6,28 @@
   "actions": [
     {
       "source": [
-        "local webhookResponse = Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\nlocal joke = webhookResponse.value\n\nContext.set(\"broma\", joke)\n\nWorkflow.branch(100)\n"
+        "Workflow.branch(71)\n"
       ],
-      "_id": "600b529842d26a8e667ab5f9",
+      "_id": "600b558342d26a06687ab82f",
       "id": "8374df6f-7b67-4a2d-a199-dcb162f6075a"
     }
   ],
-  "reactions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[{{broma}} ]])"
+      ],
+      "_id": "600b558342d26abf227ab82d",
+      "id": "61f49c64-1290-4d2b-a89d-8e463cc3d6d0"
+    },
+    {
+      "source": [
+        "Template.compile([[Type anything to go back to menu.]])"
+      ],
+      "_id": "600b558342d26a983e7ab82e",
+      "id": "5596a36e-4dcc-468f-b46a-b25bf4b96995"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "chuck-norris"
