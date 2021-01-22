@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "Context.set(\"myVar\", Context.get(\"currentMessage\"))"
+        "Context.set(\"myVar\", Context.get(\"currentMessage\"))\nWorkflow.branch(90)"
       ],
-      "_id": "600b4aaa42d26a25297aa89e",
+      "_id": "600b4be042d26a330d7aa93c",
       "id": "9a58ac1c-f92c-47ae-9036-5319379b44d1"
     }
   ],
