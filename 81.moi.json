@@ -3,13 +3,21 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 81,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(84) end"
+      ],
+      "_id": "600b4a4742d26aaf177aa86c",
+      "id": "190508b4-ac72-49bd-9883-76d567484e1a"
+    }
+  ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[Moi]])"
+        "Template.compile([[Welcome to Moi flow\n\nPress any key to continue]])"
       ],
-      "_id": "600b478942d26af8997aa7b7",
+      "_id": "600b4a4742d26ae0057aa86b",
       "id": "355a0a4c-4f86-4eb7-8a2c-cebc6214d2f5"
     }
   ],
