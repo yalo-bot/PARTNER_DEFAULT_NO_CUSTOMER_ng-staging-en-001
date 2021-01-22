@@ -3,13 +3,21 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 72,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "Workflow.branch(71)"
+      ],
+      "_id": "600b06aa42d26a543f7aa744",
+      "id": "4b264dca-01f1-408d-a2cc-2dcf81f2c31e"
+    }
+  ],
   "reactions": [
     {
       "source": [
         "Template.compile([[Welcome to Christian's flow!]])"
       ],
-      "_id": "600b067c42d26a2f827aa737",
+      "_id": "600b06aa42d26abb427aa743",
       "id": "11036dd4-103b-4450-9d50-2dd48e9e20bc"
     }
   ],
