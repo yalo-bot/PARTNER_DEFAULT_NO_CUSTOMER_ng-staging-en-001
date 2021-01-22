@@ -8,26 +8,18 @@
       "source": [
         "if Input.match('contains', 'si|Si', Context.get('currentMessage'), {}) then Workflow.branch(68) end"
       ],
-      "_id": "600a306e42d26a4c7d7aa6b5",
+      "_id": "600a31d242d26af1ee7aa6f8",
       "id": "5cdd9052-c8b9-4f04-9586-a2a5dd3eed87"
     },
     {
       "source": [
         "if Input.match('contains', 'no|No', Context.get('currentMessage'), {}) then Workflow.branch(67) end"
       ],
-      "_id": "600a306e42d26a3cc27aa6b6",
+      "_id": "600a31d242d26af7297aa6f9",
       "id": "8cfb5e48-35c3-4e48-a277-592f8ba7c7fa"
     }
   ],
-  "reactions": [
-    {
-      "source": [
-        "Template.compile([[Quisiste decir que si?]])"
-      ],
-      "_id": "600a306e42d26a57ce7aa6b4",
-      "id": "70a0c057-78b5-49eb-b3a7-708f5f516c87"
-    }
-  ],
+  "reactions": [],
   "triggers": [],
   "__v": 0,
   "name": "third"
