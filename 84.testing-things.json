@@ -3,8 +3,24 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 84,
   "type": "step",
-  "actions": [],
-  "reactions": [],
+  "actions": [
+    {
+      "source": [
+        "Context.set(\"unity\", context.get(\"currentText\"))\nDebug.info(Context.get(\"unity\"))"
+      ],
+      "_id": "600b4d8b42d26a15a27aaa8b",
+      "id": "19f79bf2-d23b-4f6c-bf6b-2fee83c36985"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[👍]])"
+      ],
+      "_id": "600b4d8b42d26a91e67aaa8a",
+      "id": "6a60b73b-d935-4da5-98c9-b06b1e798336"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "testing-things"

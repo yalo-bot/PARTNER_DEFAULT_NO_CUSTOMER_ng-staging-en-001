@@ -3,13 +3,21 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 91,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "local city = Context.get('currentMessage')\nContext.set('city', city)\n\nWorkflow.branch(94)"
+      ],
+      "_id": "600b4ce142d26aa2fd7aaa84",
+      "id": "40574044-7b8e-4cc2-b99a-58729c46d752"
+    }
+  ],
   "reactions": [
     {
       "source": [
         "Template.compile([[Welcome {{visitor}},\n\nPlease let me know the city where you live in:]])"
       ],
-      "_id": "600b4bf742d26a367b7aa977",
+      "_id": "600b4ce142d26a2d297aaa83",
       "id": "7be0dcd8-e98b-4415-ae10-880574cad004"
     }
   ],

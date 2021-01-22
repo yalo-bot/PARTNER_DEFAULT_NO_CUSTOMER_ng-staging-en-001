@@ -1,0 +1,19 @@
+{
+  "_id": "600b4d0442d26a04f77aaa85",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 95,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hello there {{name}}!]])"
+      ],
+      "_id": "600b4d7042d26ac0dd7aaa89",
+      "id": "248444aa-cefa-4730-97bd-148cde484daf"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "say-name"
+}

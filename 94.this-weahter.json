@@ -1,0 +1,11 @@
+{
+  "_id": "600b4c9542d26a5cf17aaa78",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 94,
+  "type": "step",
+  "actions": [],
+  "reactions": [],
+  "triggers": [],
+  "__v": 0,
+  "name": "this-weahter"
+}

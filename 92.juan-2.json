@@ -1,0 +1,19 @@
+{
+  "_id": "600b4c5f42d26aa6d07aaa74",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 92,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hola *{{nombre}}* qué pedo? ]])"
+      ],
+      "_id": "600b4c9342d26aa0047aaa77",
+      "id": "f127c2be-eb66-493f-a5d3-e98328eb8747"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "juan-2"
+}
