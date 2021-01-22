@@ -3,13 +3,21 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 92,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "Workflow.branch(71)"
+      ],
+      "_id": "600b4f9d42d26a20b67aae7f",
+      "id": "c9298ccc-35ed-443f-9034-4a4d1b58bdae"
+    }
+  ],
   "reactions": [
     {
       "source": [
         "Template.compile([[Hola *{{nombre}}* qué pedo?\nTu número de teléfono es *{{telefono}}*]])"
       ],
-      "_id": "600b4ddb42d26a566f7aaae1",
+      "_id": "600b4f9d42d26ad94d7aae7e",
       "id": "f127c2be-eb66-493f-a5d3-e98328eb8747"
     }
   ],
