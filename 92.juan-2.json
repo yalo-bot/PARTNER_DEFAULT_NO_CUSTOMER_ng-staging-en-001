@@ -8,7 +8,7 @@
       "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "600b540642d26a67267ab7c5",
+      "_id": "600b5a4442d26ab9a37abd74",
       "id": "2e5f9a28-d415-4673-a1bc-2c4358640993"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Hola *{{nombre}}* qué pedo?\nTu número de teléfono es *{{telefono}}*\n\n*Escribe algo para volver al menú*]])"
       ],
-      "_id": "600b540642d26a72b37ab7c4",
+      "_id": "600b5a4442d26acfef7abd73",
       "id": "f127c2be-eb66-493f-a5d3-e98328eb8747"
     }
   ],
