@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "local userId = Context.get('userId')\n\nif (userId) then\n   Workflow.branch(64)\n   Debug.info(\"Hello world\")\nelse\n   Workflow.branch(65)\nend"
+        "Debug.info(\"Hello\")"
       ],
-      "_id": "600a0ed842d26afe277aa4ca",
+      "_id": "600a1dfc42d26a06aa7aa4de",
       "id": "6131076c-457b-4eaf-9491-de195630d587"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Init]])"
       ],
-      "_id": "600a0ed842d26a9c747aa4c9",
+      "_id": "600a1dfc42d26aac1a7aa4dd",
       "id": "3885621a-31e4-4454-9f73-75a7b8d08384"
     }
   ],
