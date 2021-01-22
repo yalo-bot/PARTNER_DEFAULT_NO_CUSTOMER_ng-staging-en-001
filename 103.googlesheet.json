@@ -1,0 +1,27 @@
+{
+  "_id": "600b617342d26a69727ac0b0",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 103,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "Workflow.branch(71)"
+      ],
+      "_id": "600b618742d26a587e7ac0b2",
+      "id": "e7cc3bd9-2a44-450c-9b9d-6f6fe883f6d3"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[go to gooogle sheet and check out the new row.]])"
+      ],
+      "_id": "600b618742d26a98657ac0b1",
+      "id": "ea3f9d4f-88ed-462b-bc8c-da1c8ccaada3"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "googlesheet"
+}
