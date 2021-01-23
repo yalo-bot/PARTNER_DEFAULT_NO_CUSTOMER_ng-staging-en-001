@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match(\"contains\", \"broma|Broma|BROMA\", Context.get(\"currentMessage\"), \"\") then\n    local webhookResponse = Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\n    local joke = webhookResponse.value\n\n    Context.set(\"broma\", joke)\n    Workflow.branch(96)\nelseif Input.match(\"contains\", \"sheet|Sheet|SHEET\", Context.get(\"currentMessage\"), {}) then\n    Invoke.webhook(\"https://hooks.zapier.com/hooks/catch/1227539/ox2s7mg/\", \"POST\", '{\"text\":\"Test from StudioNG\"}')\n    Workflow.branch(73)\nelse\n    Workflow.branch(71)\nend\n"
+        "if Input.match(\"contains\", \"broma|Broma|BROMA\", Context.get(\"currentMessage\"), \"\") then\n    local webhookResponse = Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\n    local joke = webhookResponse.value\n\n    Context.set(\"broma\", joke)\n    Workflow.branch(96)\nelseif Input.match(\"contains\", \"sheet|Sheet|SHEET\", Context.get(\"currentMessage\"), {}) then\n    Invoke.webhook(\"https://hooks.zapier.com/hooks/catch/1227539/ox2s7mg/\", \"POST\", '{\"note\":\"Test from StudioNG\"}')\n    Workflow.branch(73)\nelse\n    Workflow.branch(71)\nend\n"
       ],
-      "_id": "600bd5e942d26a20ce7ac31a",
+      "_id": "600bd7b942d26af3897ac376",
       "id": "c6d93857-4b8b-44af-bc83-48e771864de9"
     }
   ],
@@ -17,14 +17,14 @@
       "source": [
         "Template.compile([[Hola {{marconame}}]])"
       ],
-      "_id": "600bd5e942d26a03fc7ac318",
+      "_id": "600bd7b942d26a0a5f7ac374",
       "id": "9c75d387-76ae-47e0-9674-d489590c6e97"
     },
     {
       "source": [
         "Template.compile([[Para saber una broma de Chuck Norris, escribe broma\n\nEscribe menu para regresar]])"
       ],
-      "_id": "600bd5e942d26af1d97ac319",
+      "_id": "600bd7b942d26a78a07ac375",
       "id": "2a448694-144f-426f-8cc4-74d68e21fbc0"
     }
   ],
