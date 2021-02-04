@@ -8,16 +8,16 @@
       "source": [
         "Workflow.branch(71)"
       ],
-      "_id": "600b625c42d26a58eb7ac117",
+      "_id": "601c7eee2434f50d6a38fb9b",
       "id": "e7cc3bd9-2a44-450c-9b9d-6f6fe883f6d3"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[go to gooogle sheet and check out the new row.]])"
+        "Template.compile([[Now go to gooogle sheet and check out the new row.]])"
       ],
-      "_id": "600b625c42d26a09b47ac116",
+      "_id": "601c7eee2434f5332f38fb9a",
       "id": "ea3f9d4f-88ed-462b-bc8c-da1c8ccaada3"
     }
   ],
