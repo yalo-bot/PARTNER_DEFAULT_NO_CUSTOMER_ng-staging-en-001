@@ -3,14 +3,29 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 121,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "Context.set(\"user-nickname\", Context.get(\"currentMessage\"))"
+      ],
+      "_id": "601c943b2434f53ad438fcdc",
+      "id": "dc976860-5c39-489a-87e2-6f3617e4fa51"
+    },
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(72) end"
+      ],
+      "_id": "601c943b2434f57ea238fcdd",
+      "id": "6ab63940-a62c-4807-8edd-287364a06306"
+    }
+  ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[¿Qué pasiones? 😺]])"
+        "Template.compile([[Ready to rock & roll? What's your nickname?]])"
       ],
-      "_id": "601c90362434f506dc38fc76",
-      "id": "644e650c-4abb-4366-ac3e-cb3fd6711967"
+      "_id": "601c943b2434f5fa7238fcdb",
+      "id": "9e8a5989-2bf7-403b-a344-f75276f8fb0e"
     }
   ],
   "triggers": [],
