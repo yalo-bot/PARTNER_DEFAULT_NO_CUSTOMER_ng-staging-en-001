@@ -1,0 +1,19 @@
+{
+  "_id": "601c8e952434f53d2238fc25",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 121,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[¿Qué pasiones? 😺]])"
+      ],
+      "_id": "601c90362434f506dc38fc76",
+      "id": "644e650c-4abb-4366-ac3e-cb3fd6711967"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "renat"
+}
