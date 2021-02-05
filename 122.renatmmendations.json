@@ -1,0 +1,19 @@
+{
+  "_id": "601c93832434f50f7e38fcd7",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 122,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Nice]])"
+      ],
+      "_id": "601cab482434f5c8c438fd8e",
+      "id": "54318a5e-de51-454c-946d-e622255e22a9"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "renatmmendations"
+}

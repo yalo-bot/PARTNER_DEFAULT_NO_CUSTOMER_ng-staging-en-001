@@ -6,16 +6,16 @@
   "actions": [
     {
       "source": [
-        "Context.set(\"user-nickname\", Context.get(\"currentMessage\"))"
+        "Context.set(\"user-nickname\", Context.get(\"currentMessage\"))\n\nWorkflow.branch(122)"
       ],
-      "_id": "601caae72434f50f2a38fd37",
+      "_id": "601cab742434f5880938fd95",
       "id": "dc976860-5c39-489a-87e2-6f3617e4fa51"
     },
     {
       "source": [
-        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(72) end"
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "601caae72434f5742838fd38",
+      "_id": "601cab742434f57ee438fd96",
       "id": "6ab63940-a62c-4807-8edd-287364a06306"
     }
   ],
@@ -24,14 +24,14 @@
       "source": [
         "Template.compile([[Ready to rock & roll? 🎸]])"
       ],
-      "_id": "601caae72434f5353238fd35",
+      "_id": "601cab742434f543e538fd93",
       "id": "9e8a5989-2bf7-403b-a344-f75276f8fb0e"
     },
     {
       "source": [
         "Template.compile([[What's your nickname?]])"
       ],
-      "_id": "601caae72434f574cb38fd36",
+      "_id": "601cab742434f5468738fd94",
       "id": "9c7fb1e5-7fe7-41ff-906a-65658051b4b8"
     }
   ],
