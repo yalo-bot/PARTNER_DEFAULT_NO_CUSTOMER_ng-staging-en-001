@@ -1,11 +1,11 @@
 {
-  "_id": "601c7e712434f52a9638fb7d",
+  "_id": "60259d7f2434f57a6d38ff72",
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
-  "id": 117,
+  "id": 126,
   "type": "step",
   "actions": [],
   "reactions": [],
   "triggers": [],
   "__v": 0,
-  "name": "adam"
+  "name": ""
 }

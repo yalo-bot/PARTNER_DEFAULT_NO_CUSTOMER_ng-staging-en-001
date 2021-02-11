@@ -6,10 +6,10 @@
   "actions": [
     {
       "source": [
-        "Context.set(\"marconame\",Context.get(\"currentMessage\"))\nWorkflow.branch(75)"
+        "Context.set(\"marconame\",Contex.(\"currentMessage\"))\nWorkflow.branch(75)"
       ],
-      "_id": "601c7f052434f56b2338fb9d",
-      "id": "de8bd9f4-ec38-4f13-a5d6-d922254198b5"
+      "_id": "6024b7602434f595c338fef7",
+      "id": "61e3d667-55b3-4c48-a07f-d714d38b243c"
     }
   ],
   "reactions": [
@@ -17,8 +17,8 @@
       "source": [
         "Template.compile([[Cómo te llamas??]])"
       ],
-      "_id": "601c7f052434f5716c38fb9c",
-      "id": "6161fe82-965f-4373-8030-15cb256efdd7"
+      "_id": "6024b7602434f5b9a538fef6",
+      "id": "d95c60b9-138c-4ad5-a6ae-7feb955a14f6"
     }
   ],
   "triggers": [],

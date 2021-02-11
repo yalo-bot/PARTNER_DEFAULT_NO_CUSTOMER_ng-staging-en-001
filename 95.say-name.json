@@ -6,10 +6,10 @@
   "actions": [
     {
       "source": [
-        "local message = Context.get(\"currentMessage\")\n\nInvoke.webhook(\"https://hooks.zapier.com/hooks/catch/9350359/ox2uqoe/\", \"POST\", '{\"text\":\"' .. message .. '\"}')\n\nWorkflow.branch(103)\n"
+        "local message = Context.get(\"currentMessage\")\nInvoke.webhook(\"https://hooks.zapier.com/hooks/catch/9350359/ox2uqoe/\", \"POST\", '{\"text\":\"' .. message .. '\"}')\nWorkflow.branch(103)"
       ],
-      "_id": "601c7ee62434f5d51a38fb99",
-      "id": "1e3f89bd-bb7d-474c-999c-3d42be0cbcba"
+      "_id": "6024bf432434f5214138ff34",
+      "id": "744286b6-c1d4-4415-b615-b0c8529fa9bf"
     }
   ],
   "reactions": [
@@ -17,15 +17,15 @@
       "source": [
         "Template.compile([[Hello there {{name}}!]])"
       ],
-      "_id": "601c7ee62434f5807a38fb97",
-      "id": "248444aa-cefa-4730-97bd-148cde484daf"
+      "_id": "6024bf432434f57cc238ff32",
+      "id": "cf479616-77a2-43bc-b0ff-47be9e3cd8b1"
     },
     {
       "source": [
         "Template.compile([[Type something, and a webhook will record your message in a Google Sheets. ]])"
       ],
-      "_id": "601c7ee62434f5f07438fb98",
-      "id": "51993a39-f109-4ec9-b92b-36a7398aa7da"
+      "_id": "6024bf432434f59c4438ff33",
+      "id": "b3a248aa-d0d7-4598-9e7a-e3644f4a5d8a"
     }
   ],
   "triggers": [],

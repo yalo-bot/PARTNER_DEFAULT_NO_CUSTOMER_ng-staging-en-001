@@ -6,10 +6,10 @@
   "actions": [
     {
       "source": [
-        "Context.set(\"name\", Context.get(\"currentMessage\"))\n\nWorkflow.branch(95)\n"
+        "Context.set(\"name\", Context.get(\"currentMessage\"))\nWorkflow.branch(95)"
       ],
-      "_id": "601c7fd92434f5369838fba8",
-      "id": "4b264dca-01f1-408d-a2cc-2dcf81f2c31e"
+      "_id": "6024bd722434f5bfbe38ff25",
+      "id": "8aca4f17-ad4a-41a0-a826-9c672da58f0d"
     }
   ],
   "reactions": [
@@ -17,15 +17,15 @@
       "source": [
         "Template.compile([[Welcome to Christian's flow!]])"
       ],
-      "_id": "601c7fd92434f5058938fba6",
-      "id": "11036dd4-103b-4450-9d50-2dd48e9e20bc"
+      "_id": "6024bd722434f576de38ff23",
+      "id": "0a6b4f54-8733-43db-b452-7e08b35d03a9"
     },
     {
       "source": [
         "Template.compile([[What's your name?]])"
       ],
-      "_id": "601c7fd92434f5236038fba7",
-      "id": "b9acd1b7-4bc6-4262-8d8c-71ecca0f9147"
+      "_id": "6024bd722434f58abf38ff24",
+      "id": "af53b194-2951-4664-89b4-1a74d8e1eece"
     }
   ],
   "triggers": [],

@@ -6,10 +6,10 @@
   "actions": [
     {
       "source": [
-        "if Input.match(\"contains\", \"broma|Broma|BROMA\", Context.get(\"currentMessage\"), \"\") then\n    local webhookResponse = Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\n    local joke = webhookResponse.value\n\n    Context.set(\"broma\", joke)\n    Workflow.branch(96)\nelseif Input.match(\"contains\", \"sheet|Sheet|SHEET\", Context.get(\"currentMessage\"), {}) then\n    Invoke.webhook(\"https://hooks.zapier.com/hooks/catch/1227539/ox2s7mg/\", \"POST\", '{\"text\":\"Test from StudioNG\"}')\n    Workflow.branch(73)\nelse\n    Workflow.branch(71)\nend\n"
+        "if Input.match(\"contains\", \"broma|Broma|BROMA\", Context.get(\"currentMessage\"), \"\") then\n    local webhookResponse = Invoke.webhook(\"https://api.chucknorris.io/jokes/random\", \"GET\", '')\n    local joke = webhookResponse.value\n    \n    Context.set(\"broma\", joke)\n    Workflow.branch(96)\nelseif Input.match(\"contains\", \"sheet|Sheet|SHEET\", Context.get(\"currentMessage\"), {}) then\n    Invoke.webhook(\"https://hooks.zapier.com/hooks/catch/1227539/ox2s7mg/\", \"POST\", '{\"text\":\"Test from StudioNG\"}')\n    Workflow.branch(73)\nelse\n    Workflow.branch(71)\nend"
       ],
-      "_id": "600bd89d42d26a0ae97ac42e",
-      "id": "c6d93857-4b8b-44af-bc83-48e771864de9"
+      "_id": "6024c09e2434f54bad38ff41",
+      "id": "f1c9460a-3c37-4be8-b44d-a8e55e08089a"
     }
   ],
   "reactions": [
@@ -17,15 +17,15 @@
       "source": [
         "Template.compile([[Hola {{marconame}}]])"
       ],
-      "_id": "600bd89d42d26af0697ac42c",
-      "id": "9c75d387-76ae-47e0-9674-d489590c6e97"
+      "_id": "6024c09e2434f53cd538ff3f",
+      "id": "3cdc6554-c1b5-4228-81b2-0f35a3cf1a81"
     },
     {
       "source": [
         "Template.compile([[Para saber una broma de Chuck Norris, escribe broma\n\nEscribe menu para regresar]])"
       ],
-      "_id": "600bd89d42d26acb9e7ac42d",
-      "id": "2a448694-144f-426f-8cc4-74d68e21fbc0"
+      "_id": "6024c09e2434f5eab338ff40",
+      "id": "b2e8acf5-e3b4-4e11-909d-86e154d425e8"
     }
   ],
   "triggers": [],

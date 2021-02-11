@@ -6,10 +6,10 @@
   "actions": [
     {
       "source": [
-        "local visitor = Context.get('currentMessage')\nContext.set('visitor', visitor)\n\nWorkflow.branch(91)\n"
+        "local visitor = Context.get('currentMessage')\nContext.set('visitor', visitor)\nWorkflow.branch(91)"
       ],
-      "_id": "601c86d12434f5a29c38fbcd",
-      "id": "855becdd-f209-4a5b-a0d9-345f663c696b"
+      "_id": "6024b96c2434f5642938ff0c",
+      "id": "310fb54c-d9db-432f-9eb4-5bcad28baf7b"
     }
   ],
   "reactions": [
@@ -17,8 +17,8 @@
       "source": [
         "Template.compile([[Hello friend, What is your name?]])"
       ],
-      "_id": "601c86d12434f511cf38fbcc",
-      "id": "56022438-98c6-48ec-b648-24542f3285b3"
+      "_id": "6024b96c2434f5493e38ff0b",
+      "id": "b1c7266b-105b-477e-8651-bef566299bdf"
     }
   ],
   "triggers": [],

@@ -1,0 +1,27 @@
+{
+  "_id": "600b4bc842d26ab0c57aa93a",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 91,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "local city = Context.get('currentMessage')\nContext.set('city', city)\n\nlocal hook = \"http://api.weatherapi.com/v1/current.json?key=98dde8c07fce46b2843215719212201&q=\"..city\nlocal data = Invoke.webhook(hook, 'GET', '')\nlocal temp = data.current.temp_c\nlocal condition = data.current.condition.text\n\nContext.set('temp', tostring(temp))\nContext.set('condition', tostring(condition))\nWorkflow.branch(94)"
+      ],
+      "_id": "6024b9262434f559ec38ff0a",
+      "id": "b2fbdec1-608e-41cc-bc99-3248ee68d686"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Welcome {{visitor}},\n\nPlease let me know the city where you live in:]])"
+      ],
+      "_id": "6024b9262434f55b4138ff09",
+      "id": "deef11aa-2a2d-4932-8bdd-a04b488c6310"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "welcome-to-ricardola"
+}
