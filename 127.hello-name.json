@@ -1,0 +1,19 @@
+{
+  "_id": "60259e682434f5c11638ffa9",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 127,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hello {{name}}! Great to chat. ]])"
+      ],
+      "_id": "60259e7a2434f5082938ffaa",
+      "id": "cc5768bb-aca9-427c-94f4-7322c66ebe44"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "hello-name"
+}
