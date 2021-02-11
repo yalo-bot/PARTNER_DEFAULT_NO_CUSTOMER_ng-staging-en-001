@@ -8,16 +8,16 @@
       "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(72) end"
       ],
-      "_id": "6025a57e2434f5ef0d3901ae",
+      "_id": "6025a63f2434f583803901e6",
       "id": "fea1c7bb-a527-4212-b51d-73925c340b36"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[You're in menu step.]])"
+        "Template.compile([[You're in *menu* step.]])"
       ],
-      "_id": "6025a57e2434f59ede3901ad",
+      "_id": "6025a63f2434f5bf8f3901e5",
       "id": "355d983d-0f75-4ee9-b27e-d7195a99e6ed"
     }
   ],

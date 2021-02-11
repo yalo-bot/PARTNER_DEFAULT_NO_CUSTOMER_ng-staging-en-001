@@ -8,17 +8,24 @@
       "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "6025a5e62434f59e2d3901b7",
+      "_id": "6025a6632434f5f4973901e9",
       "id": "4a42a3b0-d285-40d5-a86a-050afa1ce778"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[It's a beautiful day in {{city}}\n\nwith a nice {{temp}} C Wheather\n\nAnd sky looking {{condition}}\n\nPlease... enjoy today!]])"
+        "Template.compile([[It's a beautiful day in *{{city}}*.\n\nwith a nice {{temp}} C Wheather\n\nAnd sky looking {{condition}}\n\nPlease... enjoy today!]])"
       ],
-      "_id": "6025a5e62434f51c7c3901b6",
+      "_id": "6025a6632434f503a63901e7",
       "id": "78beb2ad-819d-40b4-bf1c-21996478efaf"
+    },
+    {
+      "source": [
+        "Template.compile([[Type anything to go back to *menu*.]])"
+      ],
+      "_id": "6025a6632434f50cd63901e8",
+      "id": "58c69e87-1d39-4f0a-8197-69c6fc8d4a52"
     }
   ],
   "triggers": [],
