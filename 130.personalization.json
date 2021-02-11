@@ -1,0 +1,27 @@
+{
+  "_id": "6025a1572434f57cf8390055",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 130,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+      ],
+      "_id": "6025a16c2434f57743390057",
+      "id": "7394e5f8-0cb5-4d5f-8ac0-2dc641d2e9bb"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[{{user}}]])"
+      ],
+      "_id": "6025a16c2434f50645390056",
+      "id": "424b511d-8c35-469e-8b3e-9773711dcc34"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "personalization"
+}
