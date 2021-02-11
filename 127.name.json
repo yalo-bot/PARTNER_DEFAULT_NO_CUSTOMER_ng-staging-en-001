@@ -1,0 +1,27 @@
+{
+  "_id": "60259e682434f5c11638ffa9",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 127,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "local city = Context.get('currentMessage')\nContext.set('city', city)\n\nlocal hook = \"http://api.weatherapi.com/v1/current.json?key=98dde8c07fce46b2843215719212201&q=\"..city\nlocal data = Invoke.webhook(hook, 'GET', '')\nlocal temp = data.current.temp_c\nlocal condition = data.current.condition.text\n\nContext.set('temp', tostring(temp))\nContext.set('condition', tostring(condition))\n\nWorkflow.branch(129)"
+      ],
+      "_id": "6025a06d2434f576d1390028",
+      "id": "3e87d202-64a5-4211-8df8-1e4b1a360306"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hello {{name}}! What city are you in?]])"
+      ],
+      "_id": "6025a06d2434f542cf390027",
+      "id": "cc5768bb-aca9-427c-94f4-7322c66ebe44"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "name"
+}

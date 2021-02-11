@@ -6,39 +6,18 @@
   "actions": [
     {
       "source": [
-        "if Input.match('contains', 'Christian|christian|Chris|chris', Context.get('currentMessage'), {}) then Workflow.branch(72) end"
+        "if Input.match('contains', 'Hello|hello|Hi|hi|Hola|hola|Greeting|greeting', Context.get('currentMessage'), {}) then Workflow.branch(72) end"
       ],
-      "_id": "60259cb32434f537d638ff6c",
+      "_id": "6025a12e2434f5084c390032",
       "id": "fea1c7bb-a527-4212-b51d-73925c340b36"
-    },
-    {
-      "source": [
-        "if Input.match('contains', 'Ricardo|ricardo|Ric|ric', Context.get('currentMessage'), {}) then Workflow.branch(74) end"
-      ],
-      "_id": "60259cb32434f5a1de38ff6d",
-      "id": "06e54487-218c-4fb8-a7b3-c0174f02130b"
-    },
-    {
-      "source": [
-        "if Input.match('contains', 'Marco|marco', Context.get('currentMessage'), {}) then Workflow.branch(73) end"
-      ],
-      "_id": "60259cb32434f5651838ff6e",
-      "id": "8e3e431a-bbbe-4026-bbac-119cbe51b106"
-    },
-    {
-      "source": [
-        "if Input.match('contains', 'Kyle|kyle', Context.get('currentMessage'), {}) then Workflow.branch(80) end"
-      ],
-      "_id": "60259cb32434f5338e38ff6f",
-      "id": "c615fbcf-8a0d-4be0-ac69-aef742bc1e42"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[Hello! You're in the menu step. Please select one of these options:\n\n- Christian\n\n- Ricardo\n\n- Marco\n\n- Kyle\n\n- Renato]])"
+        "Template.compile([[Hello! You're in the menu step. Please select one of these options:\n\n- Greeting\n\n- Weather]])"
       ],
-      "_id": "60259cb32434f5fa2838ff6b",
+      "_id": "6025a12e2434f507ae390031",
       "id": "355d983d-0f75-4ee9-b27e-d7195a99e6ed"
     }
   ],

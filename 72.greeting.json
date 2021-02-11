@@ -8,27 +8,20 @@
       "source": [
         "Context.set(\"name\", Context.get(\"currentMessage\"))\nWorkflow.branch(127)"
       ],
-      "_id": "60259e842434f57fd938ffad",
+      "_id": "60259fec2434f50e2d39001f",
       "id": "8aca4f17-ad4a-41a0-a826-9c672da58f0d"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[Welcome to Christian's flow!]])"
+        "Template.compile([[Hello there! What's your name?]])"
       ],
-      "_id": "60259e842434f5862f38ffab",
+      "_id": "60259fec2434f5f3be39001e",
       "id": "0a6b4f54-8733-43db-b452-7e08b35d03a9"
-    },
-    {
-      "source": [
-        "Template.compile([[What's your name?]])"
-      ],
-      "_id": "60259e842434f5b7cd38ffac",
-      "id": "af53b194-2951-4664-89b4-1a74d8e1eece"
     }
   ],
   "triggers": [],
   "__v": 0,
-  "name": "christian"
+  "name": "greeting"
 }

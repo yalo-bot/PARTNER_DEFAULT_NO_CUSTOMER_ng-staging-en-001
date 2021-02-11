@@ -1,0 +1,27 @@
+{
+  "_id": "6025a0282434f512be390024",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 129,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Context.get(\"userId\") == \"50246980100\" then\n    Context.set(\"user\", \"Hey, you're Christian eh?\")\nelse\n    Context.set(\"user\", \"You're not Christian!\")\nend\nWorkflow.branch(71)"
+      ],
+      "_id": "6025a1132434f53f65390030",
+      "id": "6f97c6b0-5a7c-4005-9691-3112eb74dc74"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[It's a beautiful day in {{city}}\n\nwith a nice {{temp}} C Wheather\n\nAnd sky looking {{condition}}\n\nPlease... enjoy today!]])"
+      ],
+      "_id": "6025a1132434f5397339002f",
+      "id": "78beb2ad-819d-40b4-bf1c-21996478efaf"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "city"
+}
