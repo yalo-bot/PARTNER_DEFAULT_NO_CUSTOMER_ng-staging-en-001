@@ -7,10 +7,17 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+        "if Context.get(\"userId\") == \"50246980100\" then\n    Context.set(\"user\", \"Christian\")\nelse\n    Context.set(\"user\", \"not Christian\")\nend"
       ],
-      "_id": "6025961b2434f5a7f138ff42",
-      "id": "81ce0e30-063d-4c1f-bbc3-33e5a4ab6a74"
+      "_id": "6025a2522434f50e0f390085",
+      "id": "dfa0da04-473e-4bd7-a0ec-84387218cdd8"
+    },
+    {
+      "source": [
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+      ],
+      "_id": "6025a2522434f530ad390086",
+      "id": "83cad490-69f8-479a-85a3-af928976bc40"
     }
   ],
   "reactions": [],

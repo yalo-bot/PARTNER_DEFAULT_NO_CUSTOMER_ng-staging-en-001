@@ -6,18 +6,18 @@
   "actions": [
     {
       "source": [
-        "if Input.match('contains', 'Hello|hello|Hi|hi|Hola|hola|Greeting|greeting', Context.get('currentMessage'), {}) then Workflow.branch(72) end"
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(72) end"
       ],
-      "_id": "6025a12e2434f5084c390032",
+      "_id": "6025a2752434f5123e390088",
       "id": "fea1c7bb-a527-4212-b51d-73925c340b36"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[Hello! You're in the menu step. Please select one of these options:\n\n- Greeting\n\n- Weather]])"
+        "Template.compile([[Hello {{user}}!  How are you?]])"
       ],
-      "_id": "6025a12e2434f507ae390031",
+      "_id": "6025a2752434f56fae390087",
       "id": "355d983d-0f75-4ee9-b27e-d7195a99e6ed"
     }
   ],
