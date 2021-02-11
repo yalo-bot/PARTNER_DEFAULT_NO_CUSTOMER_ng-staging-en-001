@@ -6,25 +6,18 @@
   "actions": [
     {
       "source": [
-        "if Context.get(\"userId\") == \"50246980100\" then\n    Context.set(\"user\", \"Christian\")\nelse\n    Context.set(\"user\", \"not Christian\")\nend"
-      ],
-      "_id": "6025a8c22434f53f0a390200",
-      "id": "b40ffa24-2797-4737-9253-6fb32cec67b8"
-    },
-    {
-      "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(127) end"
       ],
-      "_id": "6025a8c22434f56d75390201",
+      "_id": "6025ad862434f5a8cb390246",
       "id": "230d69c5-b87d-4524-a0ae-e0aae9e5b54d"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[You're in *greeting* step. Type anything.]])"
+        "Template.compile([[Hey {{user}}! You're in *greeting* step. Type anything.]])"
       ],
-      "_id": "6025a8c22434f518df3901ff",
+      "_id": "6025ad862434f5320c390245",
       "id": "19d73249-75fa-46db-82f6-e6561b998e16"
     }
   ],
