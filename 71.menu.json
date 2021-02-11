@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Context.get(\"userId\") == \"50246980100\" then\n    Context.set(\"greeting\", \"Hola Christian!\")\n    Workflow.branch(72)\nelse\n    Context.get(\"userId\") == \"50256334224\" then\n    Context.set(\"greeting\", \"Que onda Renat!\")\n    Workflow.branch(72)\nelse\n    Context.set(\"user\", \"new user\")\n    Workflow.branch(72)\nend"
+        "if Context.get(\"userId\") == \"50246980100\" then\n    Context.set(\"greeting\", \"Hola Christian!\")\n    Workflow.branch(72)\nelseif\n    Context.get(\"userId\") == \"50256334224\" then\n    Context.set(\"greeting\", \"Que onda Renat!\")\n    Workflow.branch(72)\nelse\n    Context.set(\"user\", \"new user\")\n    Workflow.branch(72)\nend"
       ],
-      "_id": "6025bbf52434f59a6439026d",
+      "_id": "6025bc692434f55a3c390286",
       "id": "d4c7d707-05c6-4f06-8a14-99fabb04afcd"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[You're in *menu* step. Type anything to go to next step.]])"
       ],
-      "_id": "6025bbf52434f5bba439026c",
+      "_id": "6025bc692434f58bf1390285",
       "id": "355d983d-0f75-4ee9-b27e-d7195a99e6ed"
     }
   ],
