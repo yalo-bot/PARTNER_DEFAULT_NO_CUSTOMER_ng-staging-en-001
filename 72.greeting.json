@@ -8,11 +8,19 @@
       "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(127) end"
       ],
-      "_id": "6025a50f2434f53b87390194",
+      "_id": "6025a5822434f54e053901b0",
       "id": "230d69c5-b87d-4524-a0ae-e0aae9e5b54d"
     }
   ],
-  "reactions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[You're in *greeting* step.]])"
+      ],
+      "_id": "6025a5822434f5b26c3901af",
+      "id": "19d73249-75fa-46db-82f6-e6561b998e16"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": "greeting"
