@@ -7,16 +7,9 @@
   "actions": [
     {
       "source": [
-        "if Context.get(\"userId\") == \"50246980100\" then\n    Context.set(\"user\", \"Christian\")\nelse\n    Context.set(\"user\", \"not Christian\")\nend"
-      ],
-      "_id": "6025a2522434f50e0f390085",
-      "id": "dfa0da04-473e-4bd7-a0ec-84387218cdd8"
-    },
-    {
-      "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "6025a2522434f530ad390086",
+      "_id": "6025a4f22434f53902390191",
       "id": "83cad490-69f8-479a-85a3-af928976bc40"
     }
   ],

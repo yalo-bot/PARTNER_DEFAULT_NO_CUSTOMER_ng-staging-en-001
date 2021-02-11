@@ -8,19 +8,11 @@
       "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(127) end"
       ],
-      "_id": "6025a44f2434f518a939014a",
+      "_id": "6025a50f2434f53b87390194",
       "id": "230d69c5-b87d-4524-a0ae-e0aae9e5b54d"
     }
   ],
-  "reactions": [
-    {
-      "source": [
-        "Template.compile([[Hello there! What's your name?]])"
-      ],
-      "_id": "6025a44f2434f51774390149",
-      "id": "0a6b4f54-8733-43db-b452-7e08b35d03a9"
-    }
-  ],
+  "reactions": [],
   "triggers": [],
   "__v": 0,
   "name": "greeting"
