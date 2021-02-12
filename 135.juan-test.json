@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "-- Invoke webhook to get weather\nlocal key = \"SUq5h0SdD1cXXwnFpwCEbu6YYgtuiMfe\"\nlocal hook = \"https://api.giphy.com/v1/gifs/random?api_key=\"..key\nlocal data = Invoke.webhook(hook, 'GET', '')\n\n\n-- Parse json response for URL\n\n\nlocal url = data.url\n\n\n-- Variables as strings, and set in the context\n\nDebug.print(\"Debug: \" .. url)\nContext.set('url', tostring(url))\n\n\n-- Branch to next step\n\nWorkflow.branch(136)\n"
+        "-- Invoke webhook to get weather\nlocal key = \"SUq5h0SdD1cXXwnFpwCEbu6YYgtuiMfe\"\nlocal hook = \"https://api.giphy.com/v1/gifs/random?api_key=\"..key\nlocal data = Invoke.webhook(hook, 'GET', '')\n\n\n-- Parse json response for URL\n\n\nlocal url = data.url\n\n\n-- Variables as strings, and set in the context\n\nContext.set('url', tostring(url))\n\n\n-- Branch to next step\n\nWorkflow.branch(136)\n"
       ],
-      "_id": "602713be7f2064372e054767",
+      "_id": "6027144d7f20641f8f054784",
       "id": "f139a2ed-a6f1-4e00-915f-43cfeef591f3"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[Quieres ver un gif?]])"
       ],
-      "_id": "602713be7f206467a3054766",
+      "_id": "6027144d7f2064de1d054783",
       "id": "0f689001-1577-42d7-84c1-72830ac6e375"
     }
   ],
