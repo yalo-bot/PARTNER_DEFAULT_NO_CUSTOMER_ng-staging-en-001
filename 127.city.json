@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "local city = Context.get('currentMessage')\nContext.set('city', city)\n\nlocal hook = \"http://api.weatherapi.com/v1/current.json?key=98dde8c07fce46b2843215719212201&q=\"..city\nlocal data = Invoke.webhook(hook, 'GET', '')\nlocal temp = data.current.temp_c\nlocal condition = data.current.condition.text\n\nContext.set('temp', tostring(temp))\nContext.set('condition', tostring(condition))\n\nWorkflow.branch(129)"
+        "-- Get the user's city\n\nlocal city = Context.get('currentMessage')\nContext.set('city', city)\n\n\n-- Invoke webhook to get weather\n\nlocal hook = \"http://api.weatherapi.com/v1/current.json?key=98dde8c07fce46b2843215719212201&q=\"..city\nlocal data = Invoke.webhook(hook, 'GET', '')\n\n\n-- Parse json response for temperature and conditions\n\nlocal temp = data.current.temp_c\nlocal condition = data.current.condition.text\n\n\n-- Variables as strings, and set in the context\n\nContext.set('temp', tostring(temp))\nContext.set('condition', tostring(condition))\n\n\n-- Branch to next step\n\nWorkflow.branch(129)\n"
       ],
-      "_id": "6025bc132434f531b6390274",
+      "_id": "6025bf4d2434f570263902a8",
       "id": "3e87d202-64a5-4211-8df8-1e4b1a360306"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[What city are you in?]])"
       ],
-      "_id": "6025bc132434f543ac390273",
+      "_id": "6025bf4d2434f528313902a7",
       "id": "d3471413-3548-467e-af14-286f55268040"
     }
   ],

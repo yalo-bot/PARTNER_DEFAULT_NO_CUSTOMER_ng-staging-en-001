@@ -1,0 +1,27 @@
+{
+  "_id": "6026f73a7870135ffb0ea72b",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 136,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+      ],
+      "_id": "6026f7b97870134ee80ea733",
+      "id": "9706d26e-2149-49e4-ae17-5fd9b64384dd"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Este es tu gif {{url}}\n\nEscribe algo para volver al menú.]])"
+      ],
+      "_id": "6026f7b978701306780ea732",
+      "id": "82ec384a-3c81-4816-841a-adadc4210592"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "juan-results"
+}
