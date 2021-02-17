@@ -3,29 +3,21 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 71,
   "type": "step",
-  "actions": [
-    {
-      "source": [
-        "if Input.match('contains', 'tweet', Context.get('currentMessage'), {}) then Workflow.branch(134) end"
-      ],
-      "_id": "6026f7cd787013b1280ea735",
-      "id": "fababc01-9a54-466f-b08d-f22db0d3da57"
-    },
-    {
-      "source": [
-        "if Input.match('contains', 'juan|Juan', Context.get('currentMessage'), {}) then Workflow.branch(135) end"
-      ],
-      "_id": "6026f7cd78701381090ea736",
-      "id": "5882b0de-3188-4492-8c41-f4432dbc4880"
-    }
-  ],
+  "actions": [],
   "reactions": [
     {
       "source": [
-        "Template.compile([[You're in *menu* step. Type anything to go to next step.]])"
+        "Template.compile([[Hello 👋  Welcome to the *NG Staging Workflow*.]])"
       ],
-      "_id": "6026f7cd7870132dda0ea734",
+      "_id": "602d3a487f2064450b0547f1",
       "id": "355d983d-0f75-4ee9-b27e-d7195a99e6ed"
+    },
+    {
+      "source": [
+        "Template.compile([[Please select one of the following options:\n\n1. One\n\n2. Two\n\n3. Three\n\n4. Other]])"
+      ],
+      "_id": "602d3a487f206402880547f2",
+      "id": "85254df9-ee19-496c-a966-bda5a0703b1f"
     }
   ],
   "triggers": [],
