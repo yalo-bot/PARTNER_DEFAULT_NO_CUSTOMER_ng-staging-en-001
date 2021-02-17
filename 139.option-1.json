@@ -1,0 +1,27 @@
+{
+  "_id": "602d3c257f20645145054810",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 139,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+      ],
+      "_id": "602d85c77f2064dded0548d7",
+      "id": "c6792f02-561a-430e-aee0-b6d0a6a64afd"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[You selected menu option 1.]])"
+      ],
+      "_id": "602d85c77f2064b4410548d6",
+      "id": "ddf3d118-828e-431a-90c2-910eaa01b650"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "option-1"
+}
