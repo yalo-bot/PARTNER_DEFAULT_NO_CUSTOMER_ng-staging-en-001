@@ -6,46 +6,39 @@
   "actions": [
     {
       "source": [
-        "if Input.match('contains', 'One|one|Uno|uno|1', Context.get('currentMessage'), {}) then Workflow.branch(139) end"
+        "if Input.match('contains', 'One|one|Uno|uno|1', Context.get('currentMessage'), {}) then  end"
       ],
-      "_id": "602d859e7f206462940548d2",
+      "_id": "603eb184b7c51755f20ae857",
       "id": "1d1f358c-221a-401f-a0ac-702d61a62238"
     },
     {
       "source": [
-        "if Input.match('contains', 'Two|two|Dos|dos|2', Context.get('currentMessage'), {}) then Workflow.branch(140) end"
+        "if Input.match('contains', 'Two|two|Dos|dos|2', Context.get('currentMessage'), {}) then  end"
       ],
-      "_id": "602d859e7f20649bc80548d3",
+      "_id": "603eb184b7c517c08c0ae858",
       "id": "64b97388-7550-4a45-b4ad-e950e9625fc4"
     },
     {
       "source": [
-        "if Input.match('contains', 'Three|three|Tres|tres|3', Context.get('currentMessage'), {}) then Workflow.branch(141) end"
+        "if Input.match('contains', 'Three|three|Tres|tres|3', Context.get('currentMessage'), {}) then  end"
       ],
-      "_id": "602d859e7f2064d2220548d4",
+      "_id": "603eb184b7c51730810ae859",
       "id": "370fc8a0-4c97-473e-a65d-417ba33515d6"
-    },
-    {
-      "source": [
-        "-- Save user input as a question to be answered in the FAQs Flow\nContext.set(\"user-question\", Context.get(\"currentMessage\"))\n\nWorkflow.branch(138)\n"
-      ],
-      "_id": "602d859e7f206471550548d5",
-      "id": "e0426ea8-3194-4392-936a-39c99a789a29"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[Hello 👋  Welcome to the *NG Staging Workflow*.]])"
+        "Template.compile([[Hello 👋  Welcome to the *NG Staging Workflow*.\n\nYou typed *{{userInput}}*.]])"
       ],
-      "_id": "602d859e7f206443be0548d0",
+      "_id": "603eb184b7c5173e520ae855",
       "id": "355d983d-0f75-4ee9-b27e-d7195a99e6ed"
     },
     {
       "source": [
-        "Template.compile([[Please select one of the following options:\n\n1. One\n\n2. Two\n\n3. Three\n\n4. Ask a question]])"
+        "Template.compile([[Please select one of the following options:\n\n1. One\n\n2. Two\n\n3. Three]])"
       ],
-      "_id": "602d859e7f2064cc400548d1",
+      "_id": "603eb184b7c517aa670ae856",
       "id": "85254df9-ee19-496c-a966-bda5a0703b1f"
     }
   ],
