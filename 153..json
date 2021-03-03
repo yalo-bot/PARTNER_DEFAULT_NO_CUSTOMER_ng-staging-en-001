@@ -4,7 +4,15 @@
   "id": 153,
   "type": "step",
   "actions": [],
-  "reactions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[thank you for your choice, 3]])"
+      ],
+      "_id": "603ffc80ea37cf849998231e",
+      "id": "8734e699-e3f1-4e43-b10f-0b022e914212"
+    }
+  ],
   "triggers": [],
   "__v": 0,
   "name": ""
