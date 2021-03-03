@@ -6,9 +6,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Workflow.branch(71)\n end"
+        "if Input.match('regex', '.*', Context.get('currentMessage'), {}) then Context.set(\"customval\", Context.get(\"3\"))\nWorkflow.branch(153)\n end"
       ],
-      "_id": "60381fd6b7c51782570ae815",
+      "_id": "603ffbe3ea37cf122e98230b",
       "id": "c6792f02-561a-430e-aee0-b6d0a6a64afd"
     }
   ],
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[You selected menu option 1.]])"
       ],
-      "_id": "60381fd6b7c517d8810ae814",
+      "_id": "603ffbe3ea37cf427298230a",
       "id": "ddf3d118-828e-431a-90c2-910eaa01b650"
     }
   ],
