@@ -6,10 +6,10 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+        "local resp = Invoke.webhook(\"https://google-search3.p.rapidapi.com/api/v1/search/q=elon+musk&num=100\", \"GET\", '')\n\nContext.set('noResults',resp.total)\nContext.set('result1',resp.results[0])\nContext.set('result1',resp.results[1])\nContext.set('result1',resp.results[2])\n\nWorkflow.branch(178)"
       ],
-      "_id": "60467e47ea37cf28dc98254d",
-      "id": "827a41c9-3334-4193-b394-7ddeb7bc5591"
+      "_id": "60467f05ea37cf3769982567",
+      "id": "1ec46d87-cbd6-4822-9f90-d46e765d4e44"
     }
   ],
   "reactions": [
@@ -17,7 +17,7 @@
       "source": [
         "Template.compile([[entraste al search]])"
       ],
-      "_id": "60467e47ea37cf9c6f98254c",
+      "_id": "60467f05ea37cfedf3982566",
       "id": "69d999b3-a7e9-47fd-8ef8-dff7aa5e8259"
     }
   ],
