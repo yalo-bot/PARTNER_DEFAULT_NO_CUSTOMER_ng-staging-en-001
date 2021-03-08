@@ -8,16 +8,16 @@
       "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "60467f6fea37cf30eb982585",
+      "_id": "60468237ea37cf33179825c5",
       "id": "13f202f1-d488-4210-a126-fff8b696568f"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[{{juan-user-name}} he encontrado {{noResults}} resultados. Los 3 más relevantes son:\n\n{{result1}}\n\n{{result2}}\n\n{{result3}}]])"
+        "Template.compile([[{{juan-user-name}} he encontrado ]])"
       ],
-      "_id": "60467f6fea37cfbf7c982584",
+      "_id": "60468237ea37cf72689825c4",
       "id": "12bd4c99-8b8b-4ed4-8369-b9aa0de5155b"
     }
   ],
