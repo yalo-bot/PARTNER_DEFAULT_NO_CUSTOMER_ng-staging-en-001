@@ -8,17 +8,17 @@
       "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "604665e3ea37cf43719823e9",
+      "_id": "6046664bea37cf255b9823fd",
       "id": "f072a5b0-d7d7-4857-b55f-40440638a41f"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[Hola type something to go back to menu\n\n]])"
+        "Template.compile([[Hola type something to go back to menu]])"
       ],
-      "_id": "604665e3ea37cf4dbf9823e8",
-      "id": "607b26f4-1de4-4169-b7cd-65bd314ef246"
+      "_id": "6046664bea37cfdfb79823fc",
+      "id": "35f1d879-4762-462c-bcb1-2786a5bfcf97"
     }
   ],
   "triggers": [],
