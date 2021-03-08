@@ -6,16 +6,16 @@
   "actions": [
     {
       "source": [
-        "if Input.match('contains', 'True|TRUE|true', Context.get('currentMessage'), {}) then Context.set(\"answer\", Context.get(\"Correct!\")) Workflow.branch() end"
+        "if Input.match('contains', 'True|TRUE|true', Context.get('currentMessage'), {}) then Context.set(\"answer\", Context.get(\"Correct!\")) Workflow.branch(71) end"
       ],
-      "_id": "6042b90bea37cf3a5c9823a0",
+      "_id": "60467436ea37cff2cb9824b6",
       "id": "76dec94f-7cf3-4dfc-af88-7f412bcc5d08"
     },
     {
       "source": [
-        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Context.set(\"answer\", Context.get(\"Wrong!\")) Workflow.branch() end"
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Context.set(\"answer\", Context.get(\"Wrong!\")) Workflow.branch(71) end"
       ],
-      "_id": "6042b90bea37cfb7639823a1",
+      "_id": "60467436ea37cfa1959824b7",
       "id": "57fd5094-b09b-4d54-9034-738edd43366d"
     }
   ],
