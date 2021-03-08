@@ -8,16 +8,16 @@
       "source": [
         "local resp = Invoke.webhook(\"https://google-search3.p.rapidapi.com/api/v1/search/q=elon+musk&num=100\", \"GET\", '')\n\nContext.set('noResults',resp.total)\nContext.set('result1',resp.results[0])\nContext.set('result1',resp.results[1])\nContext.set('result1',resp.results[2])\n\nWorkflow.branch(178)"
       ],
-      "_id": "60467f05ea37cf3769982567",
+      "_id": "60468043ea37cfdfee9825a6",
       "id": "1ec46d87-cbd6-4822-9f90-d46e765d4e44"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[entraste al search]])"
+        "Template.compile([[Ok {{juan-user-name}} ¿Cómo te puedo ayudar?]])"
       ],
-      "_id": "60467f05ea37cfedf3982566",
+      "_id": "60468043ea37cfc0289825a5",
       "id": "69d999b3-a7e9-47fd-8ef8-dff7aa5e8259"
     }
   ],
