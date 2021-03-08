@@ -6,25 +6,18 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Context.set(\"juan-user-name\", Context.get(\"currentMessage\")) Workflow.branch(171) end"
       ],
-      "_id": "604669c2ea37cfeca2982462",
-      "id": "f072a5b0-d7d7-4857-b55f-40440638a41f"
+      "_id": "60467400ea37cf48bc982497",
+      "id": "57152014-3a6e-4f91-b9b0-1acc4ceddabe"
     }
   ],
   "reactions": [
     {
       "source": [
-        "Template.compile([[here goes a PDF]])"
+        "Template.compile([[Hola, ¿Cómo te llamas?]])"
       ],
-      "_id": "604669c2ea37cf2489982460",
-      "id": "19c8b242-048f-4a0f-a831-e80217db2e84"
-    },
-    {
-      "source": [
-        "Template.compile([[Hola *type something to go back to menu*]])"
-      ],
-      "_id": "604669c2ea37cff22d982461",
+      "_id": "60467400ea37cf4336982496",
       "id": "07d0f793-7b19-483b-b5db-7a1bdf306a8f"
     }
   ],

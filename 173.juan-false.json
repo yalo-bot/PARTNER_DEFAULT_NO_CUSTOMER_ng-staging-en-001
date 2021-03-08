@@ -1,0 +1,19 @@
+{
+  "_id": "60467287ea37cf9c49982481",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 173,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+      ],
+      "_id": "604673f5ea37cf9be6982490",
+      "id": "ed0204d2-68ff-410c-a64b-8045fa9c8456"
+    }
+  ],
+  "reactions": [],
+  "triggers": [],
+  "__v": 0,
+  "name": "juan-false"
+}

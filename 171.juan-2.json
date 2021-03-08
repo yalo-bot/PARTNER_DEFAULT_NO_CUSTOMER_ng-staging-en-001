@@ -1,0 +1,34 @@
+{
+  "_id": "604671eaea37cf535198247b",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 171,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('contains', 'si|Si|SI', Context.get('currentMessage'), {}) then Workflow.branch(172) end"
+      ],
+      "_id": "604673fdea37cf6dfc982494",
+      "id": "1df5057c-86f0-4867-b3bb-8079e451bc40"
+    },
+    {
+      "source": [
+        "if Input.match('contains', 'no|No|NO', Context.get('currentMessage'), {}) then Workflow.branch(173) end"
+      ],
+      "_id": "604673fdea37cfa643982495",
+      "id": "92ff121b-0ae4-490d-aa18-d8918c3622ac"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hola {{juan-user-name}}, ¿Quieres volver al menú?]])"
+      ],
+      "_id": "604673fdea37cf56c6982493",
+      "id": "61b4c0d8-7d05-471b-a786-12d518ee47f8"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "juan-2"
+}
