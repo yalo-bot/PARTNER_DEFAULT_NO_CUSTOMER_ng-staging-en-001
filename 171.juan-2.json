@@ -8,14 +8,14 @@
       "source": [
         "if Input.match('contains', 'si|Si|SI|sí|Sí|SÍ', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "604674cbea37cfa0119824f8",
+      "_id": "60467e36ea37cfad0898254a",
       "id": "1df5057c-86f0-4867-b3bb-8079e451bc40"
     },
     {
       "source": [
-        "if Input.match('contains', 'no|No|NO', Context.get('currentMessage'), {}) then Workflow.branch(173) end"
+        "if Input.match('contains', 'no|No|NO', Context.get('currentMessage'), {}) then Workflow.branch(177) end"
       ],
-      "_id": "604674cbea37cf43199824f9",
+      "_id": "60467e36ea37cf1d0698254b",
       "id": "92ff121b-0ae4-490d-aa18-d8918c3622ac"
     }
   ],
@@ -24,7 +24,7 @@
       "source": [
         "Template.compile([[Hola *{{juan-user-name}}*, ¿Quieres volver al menú?]])"
       ],
-      "_id": "604674cbea37cf10179824f7",
+      "_id": "60467e36ea37cfaf47982549",
       "id": "61b4c0d8-7d05-471b-a786-12d518ee47f8"
     }
   ],
