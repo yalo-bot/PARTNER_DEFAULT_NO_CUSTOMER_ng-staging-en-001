@@ -1,0 +1,26 @@
+{
+  "_id": "60411f39ea37cf0a5098233e",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 155,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('contains', 'True|TRUE|true', Context.get('currentMessage'), {}) then Context.set(\"answer\", Context.get(\"Correct!\")) Workflow.branch() end"
+      ],
+      "_id": "6042b90bea37cf3a5c9823a0",
+      "id": "76dec94f-7cf3-4dfc-af88-7f412bcc5d08"
+    },
+    {
+      "source": [
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Context.set(\"answer\", Context.get(\"Wrong!\")) Workflow.branch() end"
+      ],
+      "_id": "6042b90bea37cfb7639823a1",
+      "id": "57fd5094-b09b-4d54-9034-738edd43366d"
+    }
+  ],
+  "reactions": [],
+  "triggers": [],
+  "__v": 0,
+  "name": "christian"
+}

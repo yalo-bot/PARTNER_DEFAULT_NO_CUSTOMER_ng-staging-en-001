@@ -1,0 +1,19 @@
+{
+  "_id": "60411f92ea37cf9807982342",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 156,
+  "type": "step",
+  "actions": [],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[pecas]])"
+      ],
+      "_id": "60428b26ea37cf68a698238b",
+      "id": "5fe1a201-466e-447d-bba2-e3c21e07cbc9"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "pabel"
+}

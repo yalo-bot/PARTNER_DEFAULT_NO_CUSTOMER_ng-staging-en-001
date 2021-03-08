@@ -1,0 +1,27 @@
+{
+  "_id": "6046427bea37cf81109823b9",
+  "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
+  "id": 169,
+  "type": "step",
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+      ],
+      "_id": "6046658dea37cf202d9823d0",
+      "id": "f072a5b0-d7d7-4857-b55f-40440638a41f"
+    }
+  ],
+  "reactions": [
+    {
+      "source": [
+        "Template.compile([[Hola type something to go back to menu]])"
+      ],
+      "_id": "6046658dea37cfa7709823cf",
+      "id": "a3ed2692-60ce-47ba-a61f-67ccaadc4ed9"
+    }
+  ],
+  "triggers": [],
+  "__v": 0,
+  "name": "juan-test"
+}

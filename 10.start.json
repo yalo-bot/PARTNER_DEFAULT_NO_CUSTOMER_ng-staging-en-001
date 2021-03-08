@@ -7,9 +7,9 @@
   "actions": [
     {
       "source": [
-        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Context.set(\"userInput\", Context.get(\"currentMessage\"))\nWorkflow.branch(71)\n end"
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71)\n end"
       ],
-      "_id": "603ff712ea37cf31379822a4",
+      "_id": "60411f10ea37cf8015982338",
       "id": "83cad490-69f8-479a-85a3-af928976bc40"
     }
   ],
