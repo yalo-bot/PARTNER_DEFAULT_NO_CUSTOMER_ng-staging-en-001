@@ -8,16 +8,23 @@
       "source": [
         "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
       ],
-      "_id": "604667a5ea37cf14f698244d",
+      "_id": "604669c2ea37cfeca2982462",
       "id": "f072a5b0-d7d7-4857-b55f-40440638a41f"
     }
   ],
   "reactions": [
     {
       "source": [
+        "Template.compile([[here goes a PDF]])"
+      ],
+      "_id": "604669c2ea37cf2489982460",
+      "id": "19c8b242-048f-4a0f-a831-e80217db2e84"
+    },
+    {
+      "source": [
         "Template.compile([[Hola *type something to go back to menu*]])"
       ],
-      "_id": "604667a5ea37cfbf8798244c",
+      "_id": "604669c2ea37cff22d982461",
       "id": "07d0f793-7b19-483b-b5db-7a1bdf306a8f"
     }
   ],

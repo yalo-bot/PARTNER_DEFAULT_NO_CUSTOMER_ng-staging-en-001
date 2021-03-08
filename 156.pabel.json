@@ -3,13 +3,21 @@
   "repoId": "PARTNER_DEFAULT_NO_CUSTOMER_ng-staging-en-001",
   "id": 156,
   "type": "step",
-  "actions": [],
+  "actions": [
+    {
+      "source": [
+        "if Input.match('regex', '*', Context.get('currentMessage'), {}) then Workflow.branch(71) end"
+      ],
+      "_id": "60466a49ea37cfa5d3982464",
+      "id": "649e353f-94b6-4874-8132-e150aaa6950a"
+    }
+  ],
   "reactions": [
     {
       "source": [
         "Template.compile([[pecas]])"
       ],
-      "_id": "60428b26ea37cf68a698238b",
+      "_id": "60466a49ea37cf4d01982463",
       "id": "5fe1a201-466e-447d-bba2-e3c21e07cbc9"
     }
   ],
